@@ -1,0 +1,18 @@
+---
+title: "NEWS"
+output:
+  distill::distill_article:
+    self_contained: false
+    toc: true
+    toc_depth: 3
+---
+
+## Calendars
+
+* [FIT announcements](https://noaa-fisheries-integrated-toolbox.github.io/news/)
+* [FIT calendar](https://noaa-fisheries-integrated-toolbox.github.io/news/calendar/)
+* [NMFS R UG calendar](https://noaa-fisheries-integrated-toolbox.github.io/news/R-calendar/)
+
+## Other upcoming trainings and events
+
+* [NASA Openscapes Cloud Hackathon](https://nasa-openscapes.github.io/2021-Cloud-Hackathon/) the application period is open September 21 - October 12, 2021.

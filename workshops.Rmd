@@ -1,0 +1,27 @@
+---
+title: "Workshops"
+description: |
+  Links to workshops.
+output:
+  distill::distill_article:
+    self_contained: false
+    toc: true
+    toc_depth: 3
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## 2021
+
+
+[NWFSC RWorkflow Workshops 2021](https://rverse-tutorials.github.io/RWorkflow-NWFSC-2021/) Git, GitHub, R packaging
+
+## 2020
+
+[2020 R Workshop for Social Scientists](https://emilymarkowitz-noaa.github.io/RWorkshopForSocialScientists/) workshop by NOAA Fisheries social scientists. Focus on data analysis and advanced topics.
+
+[NWFSC RWorkflow Workshops 2020](https://rverse-tutorials.github.io/RWorkflow-NWFSC-2020/) Git, GitHub, R, R packages
+
+

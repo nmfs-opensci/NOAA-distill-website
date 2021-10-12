@@ -1,0 +1,30 @@
+---
+title: "Resources"
+description: |
+  Links to resources of interest to R-Govys members 
+output:
+  distill::distill_article:
+    self_contained: false
+    toc: true
+    toc_depth: 3
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Recommended training materials
+
+* [R Consortium YouTube Channel](https://www.youtube.com/channel/UC_R5smHVXRYGhZYDJsnXTwg) many lectures on R topics.
+* [HappyGitwR](https://happygitwithr.com/)
+
+## Recommended general packages
+
+* [{tidyverse}](https://www.tidyverse.org/)
+* [{ggplot2}](https://ggplot2.tidyverse.org/)
+* [{styler}](https://styler.r-lib.org/) Style your code using the styler add-in for RStudio
+
+
+## Companion Efforts in Government
+
+**GitHub in the US federal agencies** GitHub is widely used by US federal agencies and scientists to deliver products and collaborate. This [wiki](https://github.com/Openscapes/2021-noaa-nmfs/wiki/1-GitHub-in-gov) links to some of those efforts.

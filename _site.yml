@@ -1,0 +1,34 @@
+name: "."
+title: "Training Material"
+description: |
+  NMFS Openscapes Links to Training Material
+favicon: favicon.ico
+output_dir: "docs"
+base_url: https://nmfs-openscapes.github.io/2-training
+navbar:
+  logo: 
+    image: images/logo-transparent-crop.png
+  search: false
+  right:
+    - text: "Home"
+      href: index.html
+    - text: "Upcoming events"
+      href: news.html
+    - text: "Workshops"
+      href: workshops.html
+    - text: "Repos & Orgs"
+      href: repos.html
+    - text: "Resources"
+      href: resources.html      
+    - icon: fab fa-github
+      href: https://github.com/nmfs-openscapes/2-Training
+theme: theme.css
+output:
+  distill::distill_article:
+    includes:
+      in_header:
+      - _header.html
+collections:
+  posts: 
+    categories: true
+    share: [twitter, linkedin]

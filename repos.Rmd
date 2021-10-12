@@ -1,0 +1,24 @@
+---
+title: "Repos and organizations"
+description: |
+  Other repositories and organizations within NMFS with training resources
+output:
+  distill::distill_article:
+    self_contained: false
+    toc: true
+    toc_depth: 3
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## GH organizations
+
+* [Fisheries Integrated Toolbox](https://noaa-fisheries-integrated-toolbox.github.io/) The NOAA Fisheries Integrated Toolbox (NOAA FIT) is an interdisciplinary, web-based portal of operational tools that can be used for a variety of applications, including stock assessment modeling, forecasting, and data preparation for fish and protected species, as well as economic and ecosystem modeling. The FIT community offers support for development of operational tools.
+* [Fisheries Integrated Toolbox Resources](https://noaa-fisheries-integrated-toolbox.github.io/resources/) Resources for FIT developers but are also more widely useful to developers.
+
+
+
+## Repositories
+
