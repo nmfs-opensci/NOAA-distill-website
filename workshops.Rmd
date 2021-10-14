@@ -16,7 +16,9 @@ knitr::opts_chunk$set(echo = FALSE)
 ## 2021
 
 
-[NWFSC RWorkflow Workshops 2021](https://rverse-tutorials.github.io/RWorkflow-NWFSC-2021/) Git, GitHub, R packaging
+[NWFSC RWorkflow Workshops 2021](https://rverse-tutorials.github.io/RWorkflow-NWFSC-2021/) 8 week webinare on Git, GitHub, R packaging. All material and recorded lectures are online.
+
+[R3 Train](https://noaa-iea.github.io/r3-train/) 8-week webinar training series on Reproducible Reporting with R for marine ecological indicators, sponsored by the Working Group on the Northwest Atlantic Regional Sea
 
 ## 2020
 

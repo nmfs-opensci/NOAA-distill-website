@@ -17,6 +17,7 @@ knitr::opts_chunk$set(echo = FALSE)
 
 * [Fisheries Integrated Toolbox](https://noaa-fisheries-integrated-toolbox.github.io/) The NOAA Fisheries Integrated Toolbox (NOAA FIT) is an interdisciplinary, web-based portal of operational tools that can be used for a variety of applications, including stock assessment modeling, forecasting, and data preparation for fish and protected species, as well as economic and ecosystem modeling. The FIT community offers support for development of operational tools.
 * [Fisheries Integrated Toolbox Resources](https://noaa-fisheries-integrated-toolbox.github.io/resources/) Resources for FIT developers but are also more widely useful to developers.
+* [Automation Products for IEA](https://noaa-iea.github.io/) Automation Products for Integrated Ecological Assessments
 
 
 
