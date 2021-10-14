@@ -1,7 +1,7 @@
 ---
-title: "Repos and organizations"
+title: "Websites and organizations"
 description: |
-  Other repositories and organizations within NMFS with training resources
+  Other websites and organizations within NOAA/NMFS with training resources
 output:
   distill::distill_article:
     self_contained: false
@@ -19,7 +19,7 @@ knitr::opts_chunk$set(echo = FALSE)
 * [Fisheries Integrated Toolbox Resources](https://noaa-fisheries-integrated-toolbox.github.io/resources/) Resources for FIT developers but are also more widely useful to developers.
 * [Automation Products for IEA](https://noaa-iea.github.io/) Automation Products for Integrated Ecological Assessments
 
+## Websites
 
-
-## Repositories
+* [NOAA Center for AI Training and Resources](https://www.noaa.gov/noaa-center-for-artificial-intelligence/training-and-resources)
 
