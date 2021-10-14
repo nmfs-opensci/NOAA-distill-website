@@ -16,7 +16,7 @@ navbar:
       href: news.html
     - text: "Workshops"
       href: workshops.html
-    - text: "Repos & Orgs"
+    - text: "Websites & Orgs"
       href: repos.html
     - text: "Resources"
       href: resources.html      
