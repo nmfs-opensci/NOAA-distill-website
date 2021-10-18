@@ -7,5 +7,28 @@ output:
 site: distill::distill_website
 ---
 
-Links to training resources.
+<script>
+$('#button').click(function(){
+    $('#wrapper').toggle();
+});  
+</script>
+<style>
+#wrapper {
+  display:none
+} 
+</style>
+
+## Upcoming Sessions
+
+* Oct 26th 9am PST. Zoom. 508 Compliance and R Markdown documents
+
+<button id="button">Past Sessions</button>
+<div id="wrapper" class="open">
+
+* Oct 12th 9am PST. Zoom. Inaugural NMRS R UG meeting.
+
+</div>  
+
+
+
 
