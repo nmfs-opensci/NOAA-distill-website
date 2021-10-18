@@ -5,21 +5,21 @@
       "title": "Training Resources",
       "author": [],
       "contents": "\n\n          \n      \n      \n      \n      Training Material\n      \n      \n      Home\n      Upcoming events\n      Workshops\n      Websites & Orgs\n      Resources\n      \n      \n      \n      ☰\n      \n      \n      \n        \n          \n            \n              \n            \n              Training Resources\n            \n            \n              \n                \n            \n          \n        \n        \n        \n          \n            Links to training resources.\n          \n        \n      \n    \n\n    \n      \n        \n          \n            \n              \n            \n              Training Resources\n            \n            \n              \n                \n                                  \n              \n            \n            \n              Links to training resources.\n            \n        \n      \n    \n\n    \n    \n    \n    This website was made with distill by RStudio.\n    \n    \n  \n  ",
-      "last_modified": "2021-10-17T22:38:34+00:00"
+      "last_modified": "2021-10-18T17:17:43+00:00"
     },
     {
       "path": "news.html",
       "title": "NEWS",
       "author": [],
       "contents": "\n\nContents\nCalendars\nOther upcoming trainings and events\n\nCalendars\nFIT announcements\nFIT calendar\nNMFS R UG calendar\nOther upcoming trainings and events\nNASA Openscapes Cloud Hackathon the application period is open September 21 - October 12, 2021.\n\n\n\n",
-      "last_modified": "2021-10-17T22:38:35+00:00"
+      "last_modified": "2021-10-18T17:17:44+00:00"
     },
     {
       "path": "posts.html",
       "title": "Blog",
       "author": [],
       "contents": "\n\n\n\n",
-      "last_modified": "2021-10-17T22:38:36+00:00"
+      "last_modified": "2021-10-18T17:17:45+00:00"
     },
     {
       "path": "repos.html",
@@ -27,7 +27,7 @@
       "description": "Other websites and organizations within NOAA/NMFS with training resources\n",
       "author": [],
       "contents": "\n\nContents\nGH organizations\nWebsites\n\nGH organizations\nFisheries Integrated Toolbox The NOAA Fisheries Integrated Toolbox (NOAA FIT) is an interdisciplinary, web-based portal of operational tools that can be used for a variety of applications, including stock assessment modeling, forecasting, and data preparation for fish and protected species, as well as economic and ecosystem modeling. The FIT community offers support for development of operational tools.\nFisheries Integrated Toolbox Resources Resources for FIT developers but are also more widely useful to developers.\nAutomation Products for IEA Automation Products for Integrated Ecological Assessments\nWebsites\nNOAA Center for AI Training and Resources\n\n\n\n",
-      "last_modified": "2021-10-17T22:38:37+00:00"
+      "last_modified": "2021-10-18T17:17:46+00:00"
     },
     {
       "path": "resources.html",
@@ -35,7 +35,7 @@
       "description": "Links to resources of interest to R-Govys members \n",
       "author": [],
       "contents": "\n\nContents\nRecommended training materials\nRecommended general packages\nCompanion Efforts in Government\n\nRecommended training materials\nR Consortium YouTube Channel many lectures on R topics.\nHappyGitwR\nRecommended general packages\n{tidyverse}\n{ggplot2}\n{styler} Style your code using the styler add-in for RStudio\nCompanion Efforts in Government\nGitHub in the US federal agencies GitHub is widely used by US federal agencies and scientists to deliver products and collaborate. This wiki links to some of those efforts.\n\n\n\n",
-      "last_modified": "2021-10-17T22:38:37+00:00"
+      "last_modified": "2021-10-18T17:17:46+00:00"
     },
     {
       "path": "workshops.html",
@@ -43,7 +43,7 @@
       "description": "Links to workshops.\n",
       "author": [],
       "contents": "\n\nContents\n2021\n2020\n\n2021\nFishR101 5 week R Workshop for AFSC Fisheries Researchers organized by Caitlin Allen Akselrud (@CaitlinAkselrud-NOAA), Emily Markowitz (@EmilyMarkowitz-NOAA)\nNWFSC RWorkflow Workshops 2021 8 week webinare on Git, GitHub, R packaging. All material and recorded lectures are online.\nR3 Train 8-week webinar training series on Reproducible Reporting with R for marine ecological indicators, sponsored by the Working Group on the Northwest Atlantic Regional Sea\n2020\n2020 R Workshop for Social Scientists workshop by NOAA Fisheries social scientists. Focus on data analysis and advanced topics.\nNWFSC RWorkflow Workshops 2020 Git, GitHub, R, R packages\n\n\n\n",
-      "last_modified": "2021-10-17T22:38:38+00:00"
+      "last_modified": "2021-10-18T17:17:47+00:00"
     }
   ],
   "collections": ["posts/posts.json"]
