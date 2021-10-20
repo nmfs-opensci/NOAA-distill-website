@@ -1,7 +1,7 @@
 name: "."
-title: "Training Material"
+title: "Trainings"
 description: |
-  NMFS Openscapes Links to Training Material
+  NMFS Openscapes Links to Events and Training Material
 favicon: favicon.ico
 output_dir: "docs"
 base_url: https://nmfs-openscapes.github.io/2-training
@@ -10,10 +10,8 @@ navbar:
     image: images/logo-transparent-crop.png
   search: false
   right:
-    - text: "Home"
-      href: index.html
     - text: "Upcoming events"
-      href: news.html
+      href: index.html
     - text: "Workshops"
       href: workshops.html
     - text: "Websites & Orgs"

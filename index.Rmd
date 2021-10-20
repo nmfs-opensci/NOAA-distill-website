@@ -1,5 +1,5 @@
 ---
-title: "Training Resources"
+title: "Events and Training Resources"
 favicon: favicon.ico
 image: "images/logo-transparent-crop.png"
 output:
@@ -18,18 +18,26 @@ $('#button').click(function(){
 } 
 </style>
 
-## Upcoming Sessions 
+## Upcoming Events
 
-* Oct 26th 9am PST. 508 Compliance and R Markdown documents. Virtual.
-* Nov 16th 9am PST. Lightning Talks on Reproducible Reports and Scientific Manuscripts. Virtual.
+* Oct 26th 9am PST. [508 Compliance and R Markdown documents](https://calendar.google.com/event?action=TEMPLATE&tmeid=NDhyOGhvbDQ2YzNmZzFmNjR0ZThoZ2xmZmkgbm9hYS5nb3ZfNjByZm43bWw5cnBjaGw2M3ZzNGFmOW4wMThAZw&tmsrc=noaa.gov_60rfn7ml9rpchl63vs4af9n018%40group.calendar.google.com). NMFS R User Group.
+* Nov 16th 9am PST. [Lightning Talks on Reproducible Reports and Scientific Manuscripts](https://calendar.google.com/event?action=TEMPLATE&tmeid=Mjc2OWIwM2k0OWRwNDNvamdvajExdXFqNGUgZWxpLmhvbG1lc0Bub2FhLmdvdg&tmsrc=eli.holmes%40noaa.gov). NMFS R User Group.
 
-<button id="button">Past Sessions</button>
+<center><button id="button">Past Sessions</button></center>
 <div id="wrapper" class="open">
 
 * Oct 12th 9am PST. Inaugural NMRS R UG meeting. Virtual.
 
 </div>  
 
+<br/><br/>
+
+## Other Calendars
+
+* [NMFS R UG calendar](https://noaa-fisheries-integrated-toolbox.github.io/news/R-calendar/)
+* [FIT announcements](https://noaa-fisheries-integrated-toolbox.github.io/news/)
+* [FIT calendar](https://noaa-fisheries-integrated-toolbox.github.io/news/calendar/)
+* [NASA Openscapes Events](https://nasa-openscapes.github.io/events.html) Though NASA, sometimes there are public events of interest listed here.
 
 
 
