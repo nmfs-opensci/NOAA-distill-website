@@ -843,7 +843,31 @@
         <div class="d-flex flex-column vh-100 border-left"></div>
         <div class="d-flex flex-column col px-5 align-items-center align-self-center mh-100" style="overflow-y: scroll;">
           <div class="my-5" id="content">
-            <p>Links to training resources.</p>
+            <script>
+            $('#button').click(function(){
+                $('#wrapper').toggle();
+            });  
+            </script>
+            <style>
+            #wrapper {
+              display:none
+            } 
+            </style>
+            <div id="upcoming-sessions" class="section level2">
+            <h2>Upcoming Sessions</h2>
+            <ul>
+            <li>Oct 26th 9am PST. 508 Compliance and R Markdown documents. Virtual.</li>
+            <li>Nov 16th 9am PST. Lightning Talks on Reproducible Reports and Scientific Manuscripts. Virtual.</li>
+            </ul>
+            <button id="button">
+            Past Sessions
+            </button>
+            <div id="wrapper" class="open">
+            <ul>
+            <li>Oct 12th 9am PST. Inaugural NMRS R UG meeting. Virtual.</li>
+            </ul>
+            </div>
+            </div>
           </div>
         </div>
       </div>
@@ -868,7 +892,31 @@
               </div>
             </div>
             <div class="p pt-4 px-5">
-              <p>Links to training resources.</p>
+              <script>
+              $('#button').click(function(){
+                  $('#wrapper').toggle();
+              });  
+              </script>
+              <style>
+              #wrapper {
+                display:none
+              } 
+              </style>
+              <div id="upcoming-sessions" class="section level2">
+              <h2>Upcoming Sessions</h2>
+              <ul>
+              <li>Oct 26th 9am PST. 508 Compliance and R Markdown documents. Virtual.</li>
+              <li>Nov 16th 9am PST. Lightning Talks on Reproducible Reports and Scientific Manuscripts. Virtual.</li>
+              </ul>
+              <button id="button">
+              Past Sessions
+              </button>
+              <div id="wrapper" class="open">
+              <ul>
+              <li>Oct 12th 9am PST. Inaugural NMRS R UG meeting. Virtual.</li>
+              </ul>
+              </div>
+              </div>
             </div>
         </div>
       </div>
