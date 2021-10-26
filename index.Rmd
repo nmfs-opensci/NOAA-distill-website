@@ -39,6 +39,7 @@ $('#button').click(function(){
 <div id="wrapper" class="open">
 
 <br/>
+  
 * NMFS R User Group. Oct 26, 2021 9am PST. [508 Compliance and R Markdown documents](https://github.com/nmfs-openscapes/10-26-21-508-Compliance/blob/main/README.md). 
 * Oct 12th 9am PST. Inaugural NMRS R UG meeting. Virtual.
 
