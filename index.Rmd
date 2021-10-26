@@ -33,13 +33,13 @@ $('#button').click(function(){
 
 ## Upcoming Events
 
-* Oct 26th 9am PST. [508 Compliance and R Markdown documents](https://calendar.google.com/event?action=TEMPLATE&tmeid=NDhyOGhvbDQ2YzNmZzFmNjR0ZThoZ2xmZmkgbm9hYS5nb3ZfNjByZm43bWw5cnBjaGw2M3ZzNGFmOW4wMThAZw&tmsrc=noaa.gov_60rfn7ml9rpchl63vs4af9n018%40group.calendar.google.com). NMFS R User Group.
 * Nov 16th 9am PST. [Lightning Talks on Reproducible Reports and Scientific Manuscripts](https://calendar.google.com/event?action=TEMPLATE&tmeid=Mjc2OWIwM2k0OWRwNDNvamdvajExdXFqNGUgZWxpLmhvbG1lc0Bub2FhLmdvdg&tmsrc=eli.holmes%40noaa.gov). NMFS R User Group.
 
 <center><button id="button" class="button">Past Sessions</button></center>
 <div id="wrapper" class="open">
 
 <br/>
+* NMFS R User Group. Oct 26, 2021 9am PST. [508 Compliance and R Markdown documents](https://github.com/nmfs-openscapes/10-26-21-508-Compliance/blob/main/README.md). 
 * Oct 12th 9am PST. Inaugural NMRS R UG meeting. Virtual.
 
 </div>  
