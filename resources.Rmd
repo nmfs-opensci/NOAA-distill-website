@@ -17,12 +17,15 @@ knitr::opts_chunk$set(echo = FALSE)
 <details>
   <summary>Click to expand!</summary>
   
+  There are many many online R resources. These are some that NMFS R users have found particular helpful or R courses that were developed by NMFS or other federal agencies.
+  
 * [R Consortium YouTube Channel](https://www.youtube.com/channel/UC_R5smHVXRYGhZYDJsnXTwg) many lectures on R topics.
 * [HappyGitwR](https://happygitwithr.com/)
 * [GAMS in R](https://noamross.github.io/gams-in-r-course)
 * [Data Visualizations, mostly in R](https://github.com/USGS-VIZLAB) USGS GitHub org that has many examples of data visualizations.
 * [Lots of environmental data examples in R](http://eco-data-science.github.io/) Click on "PREVIOUS SESSIONS" to go to tutorials.
 * [USGS R Training courses](https://owi.usgs.gov/R/training-curriculum/intro-curriculum/)
+* [West Coast Region R course](https://chanteddavis-noaa.github.io/WCR_RStarterPack/about.html)
 </details>
 
 ## Training materials for Python
