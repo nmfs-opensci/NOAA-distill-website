@@ -21,6 +21,8 @@ knitr::opts_chunk$set(echo = FALSE)
 
 [R3 Train](https://noaa-iea.github.io/r3-train/) 8-week webinar training series on Reproducible Reporting with R for marine ecological indicators, sponsored by the Working Group on the Northwest Atlantic Regional Sea
 
+[R for Management](https://chanteddavis-noaa.github.io/WCR_RStarterPack/index.html) A 3-day R course developed by the West Coast Regional Office.
+
 ## 2020
 
 [2020 R Workshop for Social Scientists](https://emilymarkowitz-noaa.github.io/RWorkshopForSocialScientists/) workshop by NOAA Fisheries social scientists. Focus on data analysis and advanced topics.
