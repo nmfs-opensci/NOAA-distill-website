@@ -22,6 +22,7 @@ knitr::opts_chunk$set(echo = FALSE)
 * [GAMS in R](https://noamross.github.io/gams-in-r-course)
 * [Data Visualizations, mostly in R](https://github.com/USGS-VIZLAB) USGS GitHub org that has many examples of data visualizations.
 * [Lots of environmental data examples in R](http://eco-data-science.github.io/) Click on "PREVIOUS SESSIONS" to go to tutorials.
+* [USGS R Training courses](https://owi.usgs.gov/R/training-curriculum/intro-curriculum/)
 </details>
 
 ## Training materials for Python
@@ -59,5 +60,6 @@ knitr::opts_chunk$set(echo = FALSE)
 
 * **GitHub in the US federal agencies** GitHub is widely used by US federal agencies and scientists to deliver products and collaborate. This [wiki](https://github.com/Openscapes/2021-noaa-nmfs/wiki/1-GitHub-in-gov) links to some of those efforts.
 * [**NASA EarthData**](https://earthdata.nasa.gov/)
+* [**USGS R**](https://owi.usgs.gov/R/)
 
 
