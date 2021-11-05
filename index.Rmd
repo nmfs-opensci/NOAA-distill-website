@@ -33,7 +33,7 @@ $('#button').click(function(){
 
 ## Upcoming Events
 
-* Nov 16th 9am PST. [Lightning Talks on Reproducible Reports and Scientific Manuscripts](https://calendar.google.com/event?action=TEMPLATE&tmeid=Mjc2OWIwM2k0OWRwNDNvamdvajExdXFqNGUgZWxpLmhvbG1lc0Bub2FhLmdvdg&tmsrc=eli.holmes%40noaa.gov). NMFS R User Group.
+* Nov 16th 9am PST. Lightning Talks on Reproducible Reports and Scientific Manuscripts. [Sign up to give a talk](https://docs.google.com/spreadsheets/d/17fx_XJhImr7CPVL2jzVEGjTlw8tRol-6Pqh7afeC4LY/edit#gid=0) [Join the meeting with Google Meet](meet.google.com/met-cbcg-nxg) Or add the NMFS R User Group calendar to see NMFS R UG events in your calendar [click here](https://calendar.google.com/calendar/u/0?cid=bm9hYS5nb3ZfNjByZm43bWw5cnBjaGw2M3ZzNGFmOW4wMThAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ)  
 
 <center><button id="button" class="button">Past Sessions</button></center>
 <div id="wrapper" class="open">
