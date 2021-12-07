@@ -33,7 +33,6 @@ $('#button').click(function(){
 
 ## Upcoming Events
 
-* Tue Dec 7th 9am PST. GitHub Actions. Eli will give a brief tutorial and then NMFS R UG members will show how they are using GitHub Actions. [Add the event to your calendar](https://calendar.google.com/event?action=TEMPLATE&tmeid=MHZmM2wxbTJpdTFlc3Zuamc4djZyaDJqMWEgbm9hYS5nb3ZfNjByZm43bWw5cnBjaGw2M3ZzNGFmOW4wMThAZw&tmsrc=noaa.gov_60rfn7ml9rpchl63vs4af9n018%40group.calendar.google.com)
 * Tue Dec 14th 9am PST. Kelly Mayo (NMFS Office of Science and Technology) will be giving a 1 hour tutorial and discussion about manually (via Adobe Acrobat) editing reports to be 508 compliant and talk about how we can use screen readers to check our work.  [Add the event to your calendar](https://calendar.google.com/event?action=TEMPLATE&tmeid=MnM0MDFlNG4zZTc5b29iYWtvbjZ2YmU3NHIgbm9hYS5nb3ZfNjByZm43bWw5cnBjaGw2M3ZzNGFmOW4wMThAZw&tmsrc=noaa.gov_60rfn7ml9rpchl63vs4af9n018%40group.calendar.google.com)
 
 <center><button id="button" class="button">Past Sessions</button></center>
@@ -41,6 +40,7 @@ $('#button').click(function(){
 
 <br/>
   
+* Tue Dec 7th 9am PST. GitHub Actions. Eli will give a brief tutorial and then NMFS R UG members will show how they are using GitHub Actions. [GitHub Actions repo](https://github.com/nmfs-openscapes/12-07-21-GitHub-Actions)
 * Nov 16th 9am PST. Lightning Talks on Reproducible Reports and Scientific Manuscripts. [Sign up to give a talk](https://docs.google.com/spreadsheets/d/17fx_XJhImr7CPVL2jzVEGjTlw8tRol-6Pqh7afeC4LY/edit#gid=0) [Join the meeting with Google Meet](meet.google.com/met-cbcg-nxg) Or add the NMFS R User Group calendar to see NMFS R UG events in your calendar [click here](https://calendar.google.com/calendar/u/0?cid=bm9hYS5nb3ZfNjByZm43bWw5cnBjaGw2M3ZzNGFmOW4wMThAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ)  
 * NMFS R User Group. Oct 26, 2021 9am PST. [508 Compliance and R Markdown documents](https://github.com/nmfs-openscapes/10-26-21-508-Compliance/blob/main/README.md). 
 * Oct 12th 9am PST. Inaugural NMRS R UG meeting. Virtual.
