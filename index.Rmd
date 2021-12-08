@@ -43,7 +43,7 @@ $('#button').click(function(){
 <br/>
   
 * Tue Dec 7th 9am PST. GitHub Actions. Eli will give a brief tutorial and then NMFS R UG members will show how they are using GitHub Actions. [GitHub Actions repo](https://github.com/nmfs-openscapes/12-07-21-GitHub-Actions) [Recording of the session - NOAA access only](https://drive.google.com/file/d/1_oxKuRC-m4kzy57y3PJRfhnYIXXm5nkE/view?usp=sharing)
-* Nov 16th 9am PST. Lightning Talks on Reproducible Reports and Scientific Manuscripts. [List of talks with links](https://docs.google.com/spreadsheets/d/17fx_XJhImr7CPVL2jzVEGjTlw8tRol-6Pqh7afeC4LY/edit#gid=0)
+* Nov 16th 9am PST. Lightning Talks on Reproducible Reports and Scientific Manuscripts. [List of talks with links to slides](https://github.com/nmfs-openscapes/11-16-21-Lightning-Talks)
 * NMFS R User Group. Oct 26, 2021 9am PST. [508 Compliance and R Markdown documents repo](https://github.com/nmfs-openscapes/10-26-21-508-Compliance/blob/main/README.md). [Recording of the session - NOAA access only](https://drive.google.com/file/d/1-KQd2sur0l1UxWtvl03smYR9WexdzVXZ/view?usp=sharing)
 * Oct 12th 9am PST. Inaugural NMRS R UG meeting. Virtual.
 
