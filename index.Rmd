@@ -1,5 +1,5 @@
 ---
-title: "Events and Training Resources"
+title: "NMFS R UG Events and Resources"
 favicon: favicon.ico
 image: "images/logo-transparent-crop.png"
 output:
