@@ -33,7 +33,7 @@ $('#button').click(function(){
 
 ## Upcoming Events
 
-* Wed Jan 12 2022 1-3pm EDT. PSAW III Training Sessions. Free and virtual. [Register Here](https://forms.gle/Ez99YtxVptwNCFgN9) Intro to Git and GitHub (Eli Holmes, NWFSC) and Session 2. Getting Started with RStudio Cloud 3-5pm EDT (Eli Holmes, NWFSC)
+* Wed Jan 12 2022 1-3pm EDT. PSAW III Training Sessions. Free and virtual. [Register Here](https://forms.gle/Ez99YtxVptwNCFgN9) Intro to Git and GitHub (Eli Holmes, NWFSC)
 * Wed Jan 12 2022 3-5pm EDT. PSAW III Training Sessions. Free and virtual. [Register Here](https://forms.gle/Ez99YtxVptwNCFgN9) Getting Started with RStudio Cloud (Eli Holmes, NWFSC)
 * Tues Feb 1 2022 12-1pm PST. NMFS R UG Monthly Meeting. Abby Tyrell (NEFSC) will give a presentation on workflow for the Ecosystem and Socioeconomic Profiles. [Add the event to your calendar](https://calendar.google.com/event?action=TEMPLATE&tmeid=N2pwaWJpa3MwNmM3YzlqdWFldWVwb2EzcGQgZWxpLmhvbG1lc0Bub2FhLmdvdg&tmsrc=eli.holmes%40noaa.gov)
 * Fri Feb 4 2022 1-4pm EDT. PSAW III Training Sessions. Free and virtual. [Register Here](https://forms.gle/Ez99YtxVptwNCFgN9) Part 1. Introduction to FOSSA: Free & Open Source Software for Acoustics (R packages) (Shannon Rankin, SWFSC)
