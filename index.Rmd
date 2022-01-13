@@ -31,18 +31,19 @@ $('#button').click(function(){
 }
 </style>
 
-## Upcoming Events
+## Upcoming NMFS R UG Events
 
-* Wed Jan 12 2022 1-3pm EDT. PSAW III Training Sessions. Free and virtual. [Register Here](https://forms.gle/Ez99YtxVptwNCFgN9) Intro to Git and GitHub (Eli Holmes, NWFSC)
-* Wed Jan 12 2022 3-5pm EDT. PSAW III Training Sessions. Free and virtual. [Register Here](https://forms.gle/Ez99YtxVptwNCFgN9) Getting Started with RStudio Cloud (Eli Holmes, NWFSC)
 * Tues Feb 1 2022 12-1pm PST. NMFS R UG Monthly Meeting. Abby Tyrell (NEFSC) will give a presentation on workflow for the Ecosystem and Socioeconomic Profiles. [Add the event to your calendar](https://calendar.google.com/event?action=TEMPLATE&tmeid=N2pwaWJpa3MwNmM3YzlqdWFldWVwb2EzcGQgZWxpLmhvbG1lc0Bub2FhLmdvdg&tmsrc=eli.holmes%40noaa.gov)
+* Tues Mar 8 2022 12-1pm PST. NMFS R UG Monthly Meeting. Adyan Rios (SEFSC) will talk about how the SouthEast Data, Assessment, and Review (SEDAR) is dealing with confidential data used in projects on GitHub. She'll talk about various tools and processes to prevent confidential data or secrets from being committed to repos [Add the event to your calendar](https://calendar.google.com/event?action=TEMPLATE&tmeid=NGlyNTNjYW1mYjIwODI5YWZuN29jZWw5NDggbm9hYS5nb3ZfNjByZm43bWw5cnBjaGw2M3ZzNGFmOW4wMThAZw&tmsrc=noaa.gov_60rfn7ml9rpchl63vs4af9n018%40group.calendar.google.com)
+
+## Other Events
+
 * Fri Feb 4 2022 1-4pm EDT. PSAW III Training Sessions. Free and virtual. [Register Here](https://forms.gle/Ez99YtxVptwNCFgN9) Part 1. Introduction to FOSSA: Free & Open Source Software for Acoustics (R packages) (Shannon Rankin, SWFSC)
 * Wed Feb 9 2022 1-4pm EDT. PSAW III Training Sessions. Free and virtual. [Register Here](https://forms.gle/Ez99YtxVptwNCFgN9) Part 2. Introduction to FOSSA: Free & Open Source Software for Acoustics (R packages) (Shannon Rankin, SWFSC)
 * Wed Feb 16 2022 1-3pm EDT. PSAW III Training Sessions. Free and virtual. [Register Here](https://forms.gle/Ez99YtxVptwNCFgN9) Creating a Data R Package  (Eli Holmes, NWFSC)
 * Wed Feb 23 2022 1-5pm EDT. PSAW III Training Sessions. Free and virtual. [Register Here](https://forms.gle/Ez99YtxVptwNCFgN9) Introduction to Mapping and Spatial Analysis in R (Kevin Stierhoff, SWFSC)
 * Wed Mar 2 2022 1-4pm EDT. PSAW III Training Sessions. Free and virtual. [Register Here](https://forms.gle/Ez99YtxVptwNCFgN9) Fitting Spatial and Spatiotemporal Models with sdmTMB (Eric Ward, NWFSC)
 * Wed Mar 9 2022 1-4pm EDT. PSAW III Training Sessions. Free and virtual. [Register Here](https://forms.gle/Ez99YtxVptwNCFgN9) Fitting Spatial and Spatiotemporal Models with sdmTMB (Eric Ward, NWFSC)
-
 
 
 <center><button id="button" class="button">Past Sessions</button></center>
