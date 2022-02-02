@@ -37,7 +37,7 @@ dir_files <- googledrive::drive_ls(path = url_googledrive, type="spreadsheet")
 ```
 
 ```{r include=FALSE}
-tmp <- read.csv(file.path(here::here(), "data", "MeetingList.csv"))
+tmp <- read.csv(file.path("data", "MeetingList.csv"))
 tmp$video <- paste0("[Video](", tmp$video, ") NOAA access only")
 tmp$GH.repo <- paste0("[repo](", tmp$GH.repo, ")")
 tmp$notes <- paste0("[notes](", tmp$notes, ")")
