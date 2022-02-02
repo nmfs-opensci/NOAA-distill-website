@@ -13,8 +13,8 @@ output:
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-```{r}
-# Run once to authenticate
+```{r eval=FALSE}
+# Run locally
 options(
   gargle_oauth_cache = ".secrets",
   gargle_oauth_email = "eli.holmes@noaa.gov"
@@ -24,7 +24,8 @@ googledrive::drive_auth(scopes = "https://www.googleapis.com/auth/drive.readonly
 ```
 
 
-```{r include=FALSE}
+```{r eval=FALSE}
+# Run locally
 url_googledrive <- "https://drive.google.com/drive/folders/1-6gO6uw4Rm_Hx-DdlsoBmR00OdKHsgQm"
 dir_files <- googledrive::drive_ls(path = url_googledrive, type="spreadsheet")
   file_name <- "MeetingList"
@@ -33,10 +34,10 @@ dir_files <- googledrive::drive_ls(path = url_googledrive, type="spreadsheet")
                                 overwrite = TRUE,
                                 type = "csv",
                                 path = file.path("data", file_name))
-  tmp <- read.csv(file.path(here::here(), "data", paste0(file_name, ".csv")))
 ```
 
 ```{r include=FALSE}
+tmp <- read.csv(file.path(here::here(), "data", "MeetingList.csv"))
 tmp$video <- paste0("[Video](", tmp$video, ") NOAA access only")
 tmp$GH.repo <- paste0("[repo](", tmp$GH.repo, ")")
 tmp$notes <- paste0("[notes](", tmp$notes, ")")
