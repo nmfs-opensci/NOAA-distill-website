@@ -49,10 +49,7 @@ tmp$presentation <- paste0("[slides](", tmp$presentation, ")")
 <div id="myTable">
 
 ```{r echo=FALSE}
-require(kableExtra)
-tmp %>%
-  kbl() %>%
-  kable_styling(bootstrap_options = c("striped", "hover"))
+kableExtra::kable_styling(kbl(tmp), bootstrap_options = c("striped", "hover"))
 ```
 </div>
 
