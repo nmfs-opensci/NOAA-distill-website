@@ -1,12 +1,9 @@
 ---
 title: "Past Meetings"
-description: |
-  Links to meeting material.
 output:
   distill::distill_article:
     self_contained: false
-    toc: true
-    toc_depth: 3
+    theme: meetings.css
 ---
 
 ```{r setup, include=FALSE}
@@ -38,17 +35,20 @@ dir_files <- googledrive::drive_ls(path = url_googledrive, type="spreadsheet")
 
 ```{r include=FALSE}
 tmp <- read.csv(file.path("data", "MeetingList.csv"))
-tmp$video <- paste0("[Video](", tmp$video, ") NOAA access only")
-tmp$GH.repo <- paste0("[repo](", tmp$GH.repo, ")")
-tmp$notes <- paste0("[notes](", tmp$notes, ")")
-tmp$presentation <- paste0("[slides](", tmp$presentation, ")")
+nm <- c("Video", "repo", "Notes", "Slides")
+clnm <- c("video", "repo", "notes", "slides")
+for(i in 1:4){
+  nolink <- tmp[[clnm[i]]] == ""
+  tmp[[clnm[i]]] <- paste0("[", nm[i], "](", tmp[[clnm[i]]], ")")
+  tmp[[clnm[i]]][nolink] <- ""
+}
 ```
 
 <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search the description" title="Type search text">
 
 <div id="myTable">
 
-```{r echo=FALSE}
+```{r}
 require(kableExtra)
 kable_styling(kbl(tmp), bootstrap_options = c("striped", "hover"))
 ```
@@ -63,7 +63,7 @@ function myFunction() {
   table = document.getElementById("myTable");
   tr = table.getElementsByTagName("tr");
   for (i = 0; i < tr.length; i++) {
-    td = tr[i].getElementsByTagName("td")[2];
+    td = tr[i].getElementsByTagName("td")[1];
     if (td) {
       txtValue = td.textContent || td.innerText;
       if (txtValue.toUpperCase().indexOf(filter) > -1) {
