@@ -1,0 +1,80 @@
+---
+title: "Past Meetings"
+description: |
+  Links to meeting material.
+output:
+  distill::distill_article:
+    self_contained: false
+    toc: true
+    toc_depth: 3
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+```{r}
+# Run once to authenticate
+options(
+  gargle_oauth_cache = ".secrets",
+  gargle_oauth_email = "eli.holmes@noaa.gov"
+)
+googledrive::drive_deauth()
+googledrive::drive_auth(scopes = "https://www.googleapis.com/auth/drive.readonly", email="eli.holmes@noaa.gov")
+```
+
+
+```{r include=FALSE}
+url_googledrive <- "https://drive.google.com/drive/folders/1-6gO6uw4Rm_Hx-DdlsoBmR00OdKHsgQm"
+dir_files <- googledrive::drive_ls(path = url_googledrive, type="spreadsheet")
+  file_name <- "MeetingList"
+  file_id <- dir_files$id[which(dir_files$name==file_name)]
+  googledrive::drive_download(file=file_id,
+                                overwrite = TRUE,
+                                type = "csv",
+                                path = file.path("data", file_name))
+  tmp <- read.csv(file.path(here::here(), "data", paste0(file_name, ".csv")))
+```
+
+```{r include=FALSE}
+tmp$video <- paste0("[Video](", tmp$video, ") NOAA access only")
+tmp$GH.repo <- paste0("[repo](", tmp$GH.repo, ")")
+tmp$notes <- paste0("[notes](", tmp$notes, ")")
+tmp$presentation <- paste0("[slides](", tmp$presentation, ")")
+```
+
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search the description" title="Type search text">
+
+<div id="myTable">
+
+```{r echo=FALSE}
+require(kableExtra)
+tmp %>%
+  kbl() %>%
+  kable_styling(bootstrap_options = c("striped", "hover"))
+```
+</div>
+
+```{=html}
+<script>
+function myFunction() {
+  var input, filter, table, tr, td, i, txtValue;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[2];
+    if (td) {
+      txtValue = td.textContent || td.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }       
+  }
+}
+
+</script>
+```

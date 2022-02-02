@@ -12,6 +12,8 @@ navbar:
   right:
     - text: "Upcoming events"
       href: index.html
+    - text: "Search past events"
+      href: Meetings.html
     - text: "Workshops"
       href: workshops.html
     - text: "Websites & Orgs"
