@@ -1,7 +1,7 @@
 ---
 title: "NMFS R UG Events and Resources"
 favicon: favicon.ico
-image: "images/logo-transparent-crop.png"
+image: "images/nmfs-r-ug-logo.png"
 output:
   postcards::trestles
 site: distill::distill_website

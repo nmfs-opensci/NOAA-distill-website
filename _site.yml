@@ -7,7 +7,7 @@ output_dir: "docs"
 base_url: https://nmfs-openscapes.github.io/NMFS-R-UG
 navbar:
   logo: 
-    image: images/logo-transparent-crop.png
+    image: images/nmfs-r-ug-logo.png
   search: false
   right:
     - text: "Upcoming events"
