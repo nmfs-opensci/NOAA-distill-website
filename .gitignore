@@ -7,3 +7,6 @@ images/.DS_Store
 docs
 docs/*
 .secrets
+docs/search.json
+docs/index.html
+docs/posts.html
