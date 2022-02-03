@@ -39,7 +39,7 @@ $('#button').click(function(){
 
 ## Other Events
 
-* Fri Feb 4 2022 1-4pm EDT. PSAW III Training Sessions. Free and virtual. [Register Here](https://forms.gle/Ez99YtxVptwNCFgN9) Part 1. Introduction to FOSSA: Free & Open Source Software for Acoustics (R packages) (Shannon Rankin, SWFSC)
+* Wed Feb 2 2022 1-4pm EDT. PSAW III Training Sessions. Free and virtual. [Register Here](https://forms.gle/Ez99YtxVptwNCFgN9) Part 1. Introduction to FOSSA: Free & Open Source Software for Acoustics (R packages) (Shannon Rankin, SWFSC)
 * Wed Feb 9 2022 1-4pm EDT. PSAW III Training Sessions. Free and virtual. [Register Here](https://forms.gle/Ez99YtxVptwNCFgN9) Part 2. Introduction to FOSSA: Free & Open Source Software for Acoustics (R packages) (Shannon Rankin, SWFSC)
 * Wed Feb 16 2022 1-3pm EDT. PSAW III Training Sessions. Free and virtual. [Register Here](https://forms.gle/Ez99YtxVptwNCFgN9) Creating a Data R Package  (Eli Holmes, NWFSC)
 * Wed Feb 23 2022 1-5pm EDT. PSAW III Training Sessions. Free and virtual. [Register Here](https://forms.gle/Ez99YtxVptwNCFgN9) Introduction to Mapping and Spatial Analysis in R (Kevin Stierhoff, SWFSC)
