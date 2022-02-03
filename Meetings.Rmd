@@ -51,7 +51,7 @@ tmp <- tmp[order(as.Date(tmp$date, "%b %d, %Y"), decreasing=TRUE),]
 
 ```{r}
 require(kableExtra)
-kable_styling(kbl(tmp), bootstrap_options = c("striped", "hover"))
+kable_styling(kbl(tmp, row.names=FALSE), bootstrap_options = c("striped", "hover"))
 ```
 </div>
 
