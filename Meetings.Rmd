@@ -42,6 +42,7 @@ for(i in 1:4){
   tmp[[clnm[i]]] <- paste0("[", nm[i], "](", tmp[[clnm[i]]], ")")
   tmp[[clnm[i]]][nolink] <- ""
 }
+tmp <- tmp[order(as.Date(tmp$date, "%b %d, %Y"), decreasing=TRUE),]
 ```
 
 <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search the description" title="Type search text">
