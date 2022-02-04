@@ -1,5 +1,5 @@
 ---
-title: "NMFS R UG Events and Resources"
+title: "Events and Resources"
 favicon: favicon.ico
 image: "images/nmfs-r-ug-logo.png"
 output:
@@ -31,6 +31,8 @@ $('#button').click(function(){
 }
 </style>
 
+## Join NMFS R UG chat and email list! [Add your NOAA email here](https://forms.gle/Xf8hr48SuyP1cNkn8)
+
 ## Upcoming NMFS R UG Events
 
 * Tues Feb 15 10am HI/12pm PT/3pm ET: RStudio Connect Load Testing. Christine Stawitz (OST) -  We want to test the ability of the RStudio Connect instance to scale to multiple users. As such, we wanted to set up a time for us to try to use a bunch of the Shiny apps on there simultaneously. Join to learn more about the NMFS R Shiny Connect instance and see if we can break it! [Add to your calendar](https://calendar.google.com/event?action=TEMPLATE&tmeid=NXRtNG9mcXVtMzc1a3ZoNmFrc2RqbWN0NmEgbm9hYS5nb3ZfNjByZm43bWw5cnBjaGw2M3ZzNGFmOW4wMThAZw&tmsrc=noaa.gov_60rfn7ml9rpchl63vs4af9n018%40group.calendar.google.com)
@@ -39,7 +41,6 @@ $('#button').click(function(){
 
 ## Other Events
 
-* Wed Feb 2 2022 1-4pm EDT. PSAW III Training Sessions. Free and virtual. [Register Here](https://forms.gle/Ez99YtxVptwNCFgN9) Part 1. Introduction to FOSSA: Free & Open Source Software for Acoustics (R packages) (Shannon Rankin, SWFSC)
 * Wed Feb 9 2022 1-4pm EDT. PSAW III Training Sessions. Free and virtual. [Register Here](https://forms.gle/Ez99YtxVptwNCFgN9) Part 2. Introduction to FOSSA: Free & Open Source Software for Acoustics (R packages) (Shannon Rankin, SWFSC)
 * Wed Feb 16 2022 1-3pm EDT. PSAW III Training Sessions. Free and virtual. [Register Here](https://forms.gle/Ez99YtxVptwNCFgN9) Creating a Data R Package  (Eli Holmes, NWFSC)
 * Wed Feb 23 2022 1-5pm EDT. PSAW III Training Sessions. Free and virtual. [Register Here](https://forms.gle/Ez99YtxVptwNCFgN9) Introduction to Mapping and Spatial Analysis in R (Kevin Stierhoff, SWFSC)
