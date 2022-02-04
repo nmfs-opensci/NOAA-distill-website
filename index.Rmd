@@ -31,7 +31,7 @@ $('#button').click(function(){
 }
 </style>
 
-Join NMFS R UG chat and email list! [Add your NOAA email here](https://forms.gle/Xf8hr48SuyP1cNkn8)
+[Click here to join the NMFS R UG chat and email list](https://forms.gle/Xf8hr48SuyP1cNkn8) <div style="float: right">[Contact the UG admin](https://forms.gle/Xf8hr48SuyP1cNkn8)</div>
 
 ## Upcoming NMFS R UG Events
 
