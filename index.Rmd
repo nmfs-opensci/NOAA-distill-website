@@ -31,7 +31,7 @@ $('#button').click(function(){
 }
 </style>
 
-[Click here to join the NMFS R UG chat and email list](https://forms.gle/Xf8hr48SuyP1cNkn8) <div style="float: right">[Contact the UG admin](https://forms.gle/GQVNLnTQ7SHCNiFZA)</div>
+<div style="float: left">[Click here to join the NMFS R UG chat and email list](https://forms.gle/Xf8hr48SuyP1cNkn8)</div> <div style="float: right">[Contact the UG admin](https://forms.gle/GQVNLnTQ7SHCNiFZA)</div>
 
 ## Upcoming NMFS R UG Events
 
