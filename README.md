@@ -1,2 +1,2 @@
-# 2-Training
-This repo contains links to training resources for NMFS.
+# NMFS R User Group
+This repo the website for the NMFS R User Group
