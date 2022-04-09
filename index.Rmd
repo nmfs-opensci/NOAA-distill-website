@@ -43,20 +43,18 @@ $('#button').click(function(){
 
 * [Win-Spr 2022 NMFS R UG Monthly Events Flyer](https://tinyurl.com/nmfs-rug-win-calendar)
 
-* **Tues Mar 29 2022 12-1pm PST. NMFS R UG Monthly Meeting** Erin Steiner (NWFSC) runs a data collection program where she collects cost and participation info from Commercial fishers, processors, and quota owners. She will present two types of markdown tools they have developed to QA their data and communicate with participants. Finally, she'll present some data flow challenges the team has encountered and hopefully facilitate a discussion of how others have resolved those issues.  [Add the event to your calendar](https://calendar.google.com/event?action=TEMPLATE&tmeid=M21lc3YxdjdzM201NG9pcTRuYjNqZDJyMHQgZW1pbHkubWFya293aXR6QG5vYWEuZ292&tmsrc=emily.markowitz%40noaa.gov)
-* **Tues April 5 2022 12-1pm PST** {pins} with an R Studio Rep! A representative from R Studio will be joining us to introduce the {pins} R package. {pins} can be used to share on a networked drive or with services like DropBox, RStudio Connect, Amazon S3, Azure storage and Microsoft 365 (OneDrive and SharePoint). More details to come! [Add this meeting to your calendar!](https://calendar.google.com/event?action=TEMPLATE&tmeid=NjFvcHEza2Q1aGtic3I4YXEwMHI5ZDliNnIgbm9hYS5nb3ZfNjByZm43bWw5cnBjaGw2M3ZzNGFmOW4wMThAZw&tmsrc=noaa.gov_60rfn7ml9rpchl63vs4af9n018%40group.calendar.google.com)
-
-
-## Other Events
-
-
+* **Tues April 12 2022 12-1pm PST** {pins} with an R Studio Rep! A representative from R Studio will be joining us to introduce the {pins} R package. {pins} can be used to share on a networked drive or with services like DropBox, RStudio Connect, Amazon S3, Azure storage and Microsoft 365 (OneDrive and SharePoint). More details to come! [Add this meeting to your calendar!](https://calendar.google.com/event?action=TEMPLATE&tmeid=NjFvcHEza2Q1aGtic3I4YXEwMHI5ZDliNnIgbm9hYS5nb3ZfNjByZm43bWw5cnBjaGw2M3ZzNGFmOW4wMThAZw&tmsrc=noaa.gov_60rfn7ml9rpchl63vs4af9n018%40group.calendar.google.com)
 
 
 <center><button id="button" class="button">Past Sessions</button></center>
 <div id="wrapper" class="open">
 
-<br/>
+See the "Search past events" tab and our [Past meeting notes](https://docs.google.com/document/d/1mrgtrSXVtPCTxrpBa_0ZbxEsnK9vcQzs6RIV3f-OTPw/edit?usp=sharing) for info on past events and links to things like notes and video.
   
+<br/>
+
+* **Tues Mar 29 2022 12-1pm PST. NMFS R UG Monthly Meeting** Erin Steiner (NWFSC) runs a data collection program where she collects cost and participation info from Commercial fishers, processors, and quota owners. She will present two types of markdown tools they have developed to QA their data and communicate with participants. Finally, she'll present some data flow challenges the team has encountered and hopefully facilitate a discussion of how others have resolved those issues.
+* Recordings of the PSAW III Training Sessions are online! [Recordings of the sessions - NOAA Access only](https://sites.google.com/noaa.gov/nmfs-ost-psaw)
 * Tues Mar 8 2022 12-1pm PST. NMFS R UG Monthly Meeting  Adyan Rios (SEFSC) will talk about how the SouthEast Data, Assessment, and Review (SEDAR) is dealing with confidential data used in projects on GitHub. She'll talk about various tools and processes to prevent confidential data or secrets from being committed to repos [Recording of the session - NOAA access only](https://drive.google.com/file/d/183igNEgj1qa8ea3GprBZzlfYn8z1eXPW/view?usp=sharing)
 * Wed Feb 23 2022 1-5pm Eastern. PSAW III  Introduction to Mapping and Spatial Analysis in R (Kevin Stierhoff, SWFSC)
 * Wed Mar 2 and 9 2022 1-4pm EDT. PSAW III Fitting Spatial and Spatiotemporal Models with sdmTMB (Eric Ward, NWFSC; Lewis Barnett)

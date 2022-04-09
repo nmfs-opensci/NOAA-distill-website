@@ -13,6 +13,10 @@ output:
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
+## 2022
+
+[PSAW III Workshops](https://sites.google.com/noaa.gov/nmfs-ost-psaw) Workshops by NOAA Fisheries scientists on Git/GitHub, R packages, species distribution modeling, by-catch modeling, accessing remote-sensing data with R, open-source acoustics software
+
 ## 2021
 
 [FishR101](https://emilymarkowitz-noaa.github.io/FishR101/index.html) 5 week R Workshop for AFSC Fisheries Researchers organized by Caitlin Allen Akselrud (@CaitlinAkselrud-NOAA), Emily Markowitz (@EmilyMarkowitz-NOAA)
@@ -22,6 +26,8 @@ knitr::opts_chunk$set(echo = FALSE)
 [R3 Train](https://noaa-iea.github.io/r3-train/) 8-week webinar training series on Reproducible Reporting with R for marine ecological indicators, sponsored by the Working Group on the Northwest Atlantic Regional Sea
 
 [R for Management](https://chanteddavis-noaa.github.io/WCR_RStarterPack/index.html) A 3-day R course developed by the West Coast Regional Office.
+
+[Intro to spatial capture-recapture modeling](https://www.youtube.com/channel/UCc87aAzhX7EUOalyCohzqsQ/videos) A workshop on the oSCR R package from USGS, NOAA Fisheries and Univ of St Andrews.
 
 ## 2020
 
