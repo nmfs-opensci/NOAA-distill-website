@@ -16,8 +16,8 @@ navbar:
       href: Meetings.html
     - text: "Workshops"
       href: workshops.html
-    - text: "Websites & Orgs"
-      href: repos.html
+    - text: "Wiki"
+      href: https://github.com/nmfs-openscapes/.github/wiki
     - text: "Resources"
       href: resources.html      
     - icon: fab fa-github
