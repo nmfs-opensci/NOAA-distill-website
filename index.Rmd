@@ -43,7 +43,6 @@ $('#button').click(function(){
 
 [Win-Spr 2022 NMFS R UG Monthly Events Flyer](https://tinyurl.com/nmfs-rug-win-calendar)
 
-* **Tues May 10 2022 12-1pm PST** NMFS R UG Lightning Talks! [Central Library blog post](https://libguides.library.noaa.gov/seminars/upcoming/NMFS-R-UG-Creating-reproducible-and-robust-fisheries-science-workflows-using-R-and) &#8226; [Register to join the session]( https://attendee.gotowebinar.com/register/2309930316478283790) &#8226; [Slides - NOAA access](https://docs.google.com/presentation/d/1HpmcCxFX_gj_L02jBfsOjVLWg8btA6Ym791XlxQjcFk/edit#slide=id.gf731ae63a1_0_5)
 * **Tues June 14 2022 12-1pm PST. NMFS R UG Monthly Meeting** Megsie Siple (AFSC) will give a introduction to creating R Shiny apps. [Add to your calendar](https://calendar.google.com/event?action=TEMPLATE&tmeid=NHZsYjhzdWxnMTJwaTBjM2kxYzVpaHRkcjcgZWxpLmhvbG1lc0Bub2FhLmdvdg&tmsrc=eli.holmes%40noaa.gov)
 
 <center><button id="button" class="button">Past Sessions</button></center>
@@ -53,6 +52,7 @@ See the "Search past events" tab and our [Past meeting notes](https://docs.googl
   
 <br/>
 
+* **Tues May 10 2022 12-1pm PST** NMFS R UG Lightning Talks! [Central Library blog post](https://libguides.library.noaa.gov/seminars/upcoming/NMFS-R-UG-Creating-reproducible-and-robust-fisheries-science-workflows-using-R-and) &#8226; [Video](https://www.youtube.com/watch?v=4Lo3peWvHbE&authuser=0) &#8226; [Slides - NOAA access](https://docs.google.com/presentation/d/1HpmcCxFX_gj_L02jBfsOjVLWg8btA6Ym791XlxQjcFk/edit#slide=id.gf731ae63a1_0_5)
 * **Tues April 12 2022 12-1pm PST** {pins} with an R Studio Rep! A representative from R Studio will be joining us to introduce the {pins} R package. {pins} can be used to share on a networked drive or with services like DropBox, RStudio Connect, Amazon S3, Azure storage and Microsoft 365 (OneDrive and SharePoint). 
 * **Tues Mar 29 2022 12-1pm PST. NMFS R UG Monthly Meeting** Erin Steiner (NWFSC) runs a data collection program where she collects cost and participation info from Commercial fishers, processors, and quota owners. She will present two types of markdown tools they have developed to QA their data and communicate with participants. Finally, she'll present some data flow challenges the team has encountered and hopefully facilitate a discussion of how others have resolved those issues.
 * Recordings of the PSAW III Training Sessions are online! [Recordings of the sessions - NOAA Access only](https://sites.google.com/noaa.gov/nmfs-ost-psaw)
