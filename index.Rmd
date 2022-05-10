@@ -41,7 +41,7 @@ $('#button').click(function(){
 
 ## Upcoming NMFS R UG Events
 
-* [Win-Spr 2022 NMFS R UG Monthly Events Flyer](https://tinyurl.com/nmfs-rug-win-calendar)
+[Win-Spr 2022 NMFS R UG Monthly Events Flyer](https://tinyurl.com/nmfs-rug-win-calendar)
 
 * **Tues May 10 2022 12-1pm PST** NMFS R UG Lightning Talks! [Central Library blog post](https://libguides.library.noaa.gov/seminars/upcoming/NMFS-R-UG-Creating-reproducible-and-robust-fisheries-science-workflows-using-R-and) &#8226; [Register to join the session]( https://attendee.gotowebinar.com/register/2309930316478283790) &#8226; [Slides - NOAA access](https://docs.google.com/presentation/d/1HpmcCxFX_gj_L02jBfsOjVLWg8btA6Ym791XlxQjcFk/edit#slide=id.gf731ae63a1_0_5)
 * **Tues June 14 2022 12-1pm PST. NMFS R UG Monthly Meeting** Megsie Siple (AFSC) will give a introduction to creating R Shiny apps. [Add to your calendar](https://calendar.google.com/event?action=TEMPLATE&tmeid=NHZsYjhzdWxnMTJwaTBjM2kxYzVpaHRkcjcgZWxpLmhvbG1lc0Bub2FhLmdvdg&tmsrc=eli.holmes%40noaa.gov)
@@ -76,7 +76,7 @@ See the "Search past events" tab and our [Past meeting notes](https://docs.googl
 
 ## Other Calendars
 
-* [NMFS R UG calendar](https://calendar.google.com/calendar/embed?src=noaa.gov_60rfn7ml9rpchl63vs4af9n018%40group.calendar.google.com&ctz=America%2FLos_Angeles)
+* [NMFS R UG calendar - NOAA access](https://calendar.google.com/calendar/embed?src=noaa.gov_60rfn7ml9rpchl63vs4af9n018%40group.calendar.google.com&ctz=America%2FLos_Angeles)
 * [FIT announcements](https://noaa-fisheries-integrated-toolbox.github.io/news/)
 * [FIT calendar](https://noaa-fisheries-integrated-toolbox.github.io/news/calendar/)
 * [NASA Openscapes Events](https://nasa-openscapes.github.io/events.html) Though NASA, sometimes there are public events of interest listed here.
