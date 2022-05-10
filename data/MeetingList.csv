@@ -7,3 +7,16 @@ date,description,slides,repo,video,notes
 "Feb 1, 2022",Abby Tyrell (AFSC) will share code and workflow/process insights on her work contributing to Ecosystem and Socioeconomic Profiles produced by the NEFSC and AFSC,https://docs.google.com/presentation/d/14CnVSQOp2q171obKH1gHHb1bBBblGWLsuMEkPXbFCxU/edit#slide=id.p,https://github.com/atyrell3/AKesp,https://drive.google.com/file/d/1JDJolN2wPOQR55vE4eBiDCEAnJNTEZp9/view?usp=sharing,
 "Mar 8, 2022","Adyan Rios (SEFSC) will talk about how the SouthEast Data, Assessment, and Review (SEDAR) is dealing with confidential data used in projects on GitHub. She'll talk about various tools and processes to prevent confidential data or secrets from being committed to repos",https://docs.google.com/presentation/d/1diWpGMfAC7JVSc-v66qv9AuE9tVAqe7ajbDmRPvp51A/edit?usp=sharing,https://github.com/nmfs-openscapes/Confidentiality-Confidence-Builder,https://drive.google.com/file/d/183igNEgj1qa8ea3GprBZzlfYn8z1eXPW/view?usp=sharing,https://docs.google.com/document/d/1mrgtrSXVtPCTxrpBa_0ZbxEsnK9vcQzs6RIV3f-OTPw/edit#bookmark=id.fhztf2y4ckcj
 "March 29, 2022","Erin Steiner (NWFSC) runs a data collection program where she collects cost and participation info from Commercial fishers, processors, and quota owners. She will present R Markdown tools they use for data QA and discuss data workflow challenges.",https://docs.google.com/presentation/d/1kWFsN3u31HgL4ZafeeMzQYmdwk4d2i6kyDkgwqh8LjU/edit#slide=id.g11fba16ce81_0_14,,,
+"May 10, 2022","NMFS R UG Lightning Talks! Diana Dishman (WCRO), “Automating BiOps and permits: why regional offices should love R too!”,
+Em Markowitz (AFSC), “Using R to make survey preparation, communication, and results sharing more efficient!”,
+Amanda Bradford (PIFSC), “Design-based line-transect cetacean abundance estimation in R”,
+Alan Olson (WCRO), “Multipopulation PNI (Proportionate Natural Influence) modeling tool” and “Predation, competition, and delayed mortality risk model”,
+Eli Holmes (NWFSC), “MARSS: Multivariate Time Series Analysis in R!”,
+Ben Duffin (OSF), “Points and Polygons: an App for Atlantic HMS EFH”,
+Kelli Johnson (NWFSC), “Automated alternative text with ggplot2”,
+Bai Li (OST) and Giselle Schmitz (OST), “Automating the backup of GitHub repositories”,
+Hem Nalini Morzaria-Luna (NWFSC), “Parallelization and batch processing models with R”,
+Kathryn Doering (NWFSC) and Bai Li (OST), “ghactions4r: Use github actions workflows for R packages with less effort”,
+Adyan Rios (SEFSC), “Management history processing”
+",https://docs.google.com/presentation/d/1HpmcCxFX_gj_L02jBfsOjVLWg8btA6Ym791XlxQjcFk/edit#slide=id.gf731ae63a1_0_5,,https://www.youtube.com/watch?v=4Lo3peWvHbE&authuser=0,
+"April 12, 2022","{pins} with an R Studio Rep! A representative from R Studio will be joining us to introduce the {pins} R package. {pins} can be used to share on a networked drive or with services like DropBox, RStudio Connect, Amazon S3, Azure storage and Microsoft 365 (OneDrive and SharePoint).",,,,
