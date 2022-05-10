@@ -43,7 +43,7 @@ $('#button').click(function(){
 
 * [Win-Spr 2022 NMFS R UG Monthly Events Flyer](https://tinyurl.com/nmfs-rug-win-calendar)
 
-* **Tues May 10 2022 12-1pm PST** NMFS R UG Lightning Talks! [Sign-up here - NOAA access](https://docs.google.com/spreadsheets/d/1TxgmQHWa2CvDiVt-DTWaZJVAkZ_cwFe6fDvB2VZ5E7w/edit#gid=1049789951) &#8226; [Add your slides here - NOAA access](https://docs.google.com/presentation/d/1HpmcCxFX_gj_L02jBfsOjVLWg8btA6Ym791XlxQjcFk/edit#slide=id.gf731ae63a1_0_5)
+* **Tues May 10 2022 12-1pm PST** NMFS R UG Lightning Talks! [Central Library blog post](https://libguides.library.noaa.gov/seminars/upcoming/NMFS-R-UG-Creating-reproducible-and-robust-fisheries-science-workflows-using-R-and) &#8226; [Register to join the session]( https://attendee.gotowebinar.com/register/2309930316478283790) &#8226; [Slides - NOAA access](https://docs.google.com/presentation/d/1HpmcCxFX_gj_L02jBfsOjVLWg8btA6Ym791XlxQjcFk/edit#slide=id.gf731ae63a1_0_5)
 * **Tues June 14 2022 12-1pm PST. NMFS R UG Monthly Meeting** Megsie Siple (AFSC) will give a introduction to creating R Shiny apps. [Add to your calendar](https://calendar.google.com/event?action=TEMPLATE&tmeid=NHZsYjhzdWxnMTJwaTBjM2kxYzVpaHRkcjcgZWxpLmhvbG1lc0Bub2FhLmdvdg&tmsrc=eli.holmes%40noaa.gov)
 
 <center><button id="button" class="button">Past Sessions</button></center>
