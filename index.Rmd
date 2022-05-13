@@ -32,7 +32,7 @@ $('#button').click(function(){
 </style>
 
 <div>
-<div style="float: left">[Join the NMFS R UG email list (NOAA access only)](https://forms.gle/Xf8hr48SuyP1cNkn8)</div> <div style="float: right">[Contact the UG admin (NOAA access only)](https://forms.gle/GQVNLnTQ7SHCNiFZA)</div>
+<div style="float: left">[Join our Google Space! (NOAA access only)](https://forms.gle/Xf8hr48SuyP1cNkn8)</div> <div style="float: right">[Contact the UG admin (NOAA access only)](https://forms.gle/GQVNLnTQ7SHCNiFZA)</div>
 </div>
 
 <p></p>
