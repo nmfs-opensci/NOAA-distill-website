@@ -32,7 +32,7 @@ $('#button').click(function(){
 </style>
 
 <div>
-<div style="float: left">[Join our Google Space! (NOAA only)](https://forms.gle/Xf8hr48SuyP1cNkn8)</div> [Calendar (NOAA only)](https://calendar.google.com/calendar/embed?src=noaa.gov_60rfn7ml9rpchl63vs4af9n018%40group.calendar.google.com&ctz=America%2FLos_Angeles) <div style="float: right">[Contact NMFS-RUG (NOAA only)](https://forms.gle/GQVNLnTQ7SHCNiFZA)</div>
+<div style="float: left">[Join our Google Space! (NOAA only)](https://forms.gle/Xf8hr48SuyP1cNkn8)</div> <center>[Calendar (NOAA only)](https://calendar.google.com/calendar/embed?src=noaa.gov_60rfn7ml9rpchl63vs4af9n018%40group.calendar.google.com&ctz=America%2FLos_Angeles)</center> <div style="float: right">[Contact NMFS-RUG (NOAA only)](https://forms.gle/GQVNLnTQ7SHCNiFZA)</div>
 </div>
 
 <p></p>
