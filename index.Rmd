@@ -47,6 +47,8 @@ $('#button').click(function(){
 
 * **Tues June 14 2022 12-1pm PDT. NMFS R UG Monthly Meeting** Megsie Siple (AFSC) will give a introduction to creating R Shiny apps. [Add to your calendar](https://calendar.google.com/event?action=TEMPLATE&tmeid=NHZsYjhzdWxnMTJwaTBjM2kxYzVpaHRkcjcgZWxpLmhvbG1lc0Bub2FhLmdvdg&tmsrc=eli.holmes%40noaa.gov)
 
+* **Tues July 19 2022 12-1pm PDT. NMFS R UG Monthly Meeting** Christine Stawitz (NWFSC) will share how she is using the GitHub API to create status emails in R. After the demo, we'll discuss how we can use Christine's efforts to possibly create a user-friendly R package that everyone can benefit from! [Add to your calendar](https://calendar.google.com/event?action=TEMPLATE&tmeid=N25mNjYzdmFxaGg3OTcxdDJucjdiYzYzNmsgZWxpLmhvbG1lc0Bub2FhLmdvdg&tmsrc=eli.holmes%40noaa.gov)
+
 <center><button id="button" class="button">Past Sessions</button></center>
 <div id="wrapper" class="open">
 
