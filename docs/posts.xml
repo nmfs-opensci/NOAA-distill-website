@@ -2,33 +2,33 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
   <channel>
     <title>NMFS R UG</title>
-    <link>https://nmfs-openscapes.github.io/NMFS-R-UG</link>
-    <atom:link href="https://nmfs-openscapes.github.io/NMFS-R-UG/posts.xml" rel="self" type="application/rss+xml"/>
+    <link>https://nmfs-opensci.github.io/NMFS-R-UG</link>
+    <atom:link href="https://nmfs-opensci.github.io/NMFS-R-UG/posts.xml" rel="self" type="application/rss+xml"/>
     <description>NMFS R User Group events and materials
 </description>
     <image>
       <title>NMFS R UG</title>
-      <url>https://nmfs-openscapes.github.io/NMFS-R-UG/favicon.ico</url>
-      <link>https://nmfs-openscapes.github.io/NMFS-R-UG</link>
+      <url>https://nmfs-opensci.github.io/NMFS-R-UG/favicon.ico</url>
+      <link>https://nmfs-opensci.github.io/NMFS-R-UG</link>
     </image>
     <generator>Distill</generator>
     <lastBuildDate>Tue, 28 Sep 2021 00:00:00 +0000</lastBuildDate>
     <item>
       <title>vdiffr package</title>
       <dc:creator>E. Eli Holmes</dc:creator>
-      <link>https://nmfs-openscapes.github.io/NMFS-R-UG/posts/2021-09-28-vdiffr</link>
+      <link>https://nmfs-opensci.github.io/NMFS-R-UG/posts/2021-09-28-vdiffr</link>
       <description>Tests to compare plots for R packages</description>
       <category>testing</category>
       <category>R packages</category>
-      <guid>https://nmfs-openscapes.github.io/NMFS-R-UG/posts/2021-09-28-vdiffr</guid>
+      <guid>https://nmfs-opensci.github.io/NMFS-R-UG/posts/2021-09-28-vdiffr</guid>
       <pubDate>Tue, 28 Sep 2021 00:00:00 +0000</pubDate>
     </item>
     <item>
       <title>welcome</title>
       <dc:creator>E. Eli Holmes</dc:creator>
-      <link>https://nmfs-openscapes.github.io/NMFS-R-UG/posts/2021-09-15-welcome</link>
+      <link>https://nmfs-opensci.github.io/NMFS-R-UG/posts/2021-09-15-welcome</link>
       <description>Welcome to the R-Govys Blog.</description>
-      <guid>https://nmfs-openscapes.github.io/NMFS-R-UG/posts/2021-09-15-welcome</guid>
+      <guid>https://nmfs-opensci.github.io/NMFS-R-UG/posts/2021-09-15-welcome</guid>
       <pubDate>Wed, 15 Sep 2021 00:00:00 +0000</pubDate>
     </item>
   </channel>

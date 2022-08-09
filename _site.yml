@@ -4,7 +4,7 @@ description: |
   NMFS R User Group events and materials
 favicon: favicon.ico
 output_dir: "docs"
-base_url: https://nmfs-openscapes.github.io/NMFS-R-UG
+base_url: https://nmfs-opensci.github.io/NMFS-R-UG
 navbar:
   logo: 
     image: images/nmfs-r-ug-logo.png
@@ -21,7 +21,7 @@ navbar:
     - text: "Resources"
       href: resources.html      
     - icon: fab fa-github
-      href: https://github.com/nmfs-openscapes/NMFS-R-UG
+      href: https://github.com/nmfs-opensci/NMFS-R-UG
 theme: theme.css
 output:
   distill::distill_article:
