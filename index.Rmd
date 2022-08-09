@@ -41,11 +41,7 @@ $('#button').click(function(){
 
 ## Upcoming NMFS R UG Events
 
-
-* **Tues July 19 2022 12-1pm PDT. NMFS R UG Monthly Meeting** Christine Stawitz (NWFSC) will share how she is using the GitHub API to create status emails in R. After the demo, we'll discuss how we can use Christine's efforts to possibly create a user-friendly R package that everyone can benefit from! [Add to your calendar](https://calendar.google.com/event?action=TEMPLATE&tmeid=N25mNjYzdmFxaGg3OTcxdDJucjdiYzYzNmsgZWxpLmhvbG1lc0Bub2FhLmdvdg&tmsrc=eli.holmes%40noaa.gov)
-
-* **Fri July 15 2022 10-11am PDT. Week 6 of [Practical R and Git Workflow for NOAA Scientists](https://rverse-tutorials.github.io/RWorkflow-NWFSC-2022/)** Eli Holmes (NWFSC) Week 6 R Markdown for writing reports. There are many online tutorials for R Markdown which will cover the basics. I will focus on R Markdown for fisheries (or other) reports. When the data change (which happens often), we have to remake tables (and graphs) and update the numbers in text. For big reports, this is time-consuming and creates errors. I’ll show you how to use R Markdown to automate this process, so you are not manually remaking reports. [Join with WebEx](https://noaanmfs-meets.webex.com/noaanmfs-meets/j.php?MTID=m78f662eb57d19d05c40c45a722d81d5e)
-
+* **August 2022 12-1pm PDT. NMFS R UG Monthly Meeting** TBD
 
 <center><button id="button" class="button">Past Sessions</button></center>
 <div id="wrapper" class="open">
@@ -53,7 +49,14 @@ $('#button').click(function(){
 See the "Search past events" tab and our [Past meeting notes](https://docs.google.com/document/d/1mrgtrSXVtPCTxrpBa_0ZbxEsnK9vcQzs6RIV3f-OTPw/edit?usp=sharing) for info on past events and links to things like notes and video for past events.
   
 <br/>
+* **Fri Aug 5 2022 10-11am PDT. Week 8 of [Practical R and Git Workflow for NOAA Scientists](https://rverse-tutorials.github.io/RWorkflow-NWFSC-2022/)** Eli Holmes (NWFSC) Week 8 Part 2. R Markdown/Quarto for writing reports. Part 2 of writing big reports with R Markdown/Quarto.  Link to video is on the website.
+
+* **Tues July 19 2022 12-1pm PDT. NMFS R UG Monthly Meeting** Christine Stawitz (NWFSC) will share how she is using the GitHub API to create status emails in R. After the demo, we'll discuss how we can use Christine's efforts to possibly create a user-friendly R package that everyone can benefit from! [slides](https://nmfs-opensci.github.io/2022-07-19-APIs/githubAPI.html#1)
+
+* **Fri July 15 2022 10-11am PDT. Week 7 of [Practical R and Git Workflow for NOAA Scientists](https://rverse-tutorials.github.io/RWorkflow-NWFSC-2022/)** Eli Holmes (NWFSC) Week 7 Part 1. R Markdown for writing reports. There are many online tutorials for R Markdown which will cover the basics. I will focus on R Markdown for fisheries (or other) reports. When the data change (which happens often), we have to remake tables (and graphs) and update the numbers in text. For big reports, this is time-consuming and creates errors. I’ll show you how to use R Markdown to automate this process, so you are not manually remaking reports. Link to video is on the website.
+
 * **Fri July 15 2022 10-11am PDT. Week 6 of [Practical R and Git Workflow for NOAA Scientists](https://rverse-tutorials.github.io/RWorkflow-NWFSC-2022/)** Eli Holmes (NWFSC) Week 5 Documenting and sharing R packages with RStudio and GitHub. Link to video is on the website.
+  
 * **Fri July 8 2022 10-11am PDT. Week 5 of [Practical R and Git Workflow for NOAA Scientists](https://rverse-tutorials.github.io/RWorkflow-NWFSC-2022/)** Eli Holmes (NWFSC) Week 5 Intro to making R packages in RStudio. Link to video is on the website.
 * **Fri June 10 2022 10-11am PDT. Week 4 of [Practical R and Git Workflow for NOAA Scientists](https://rverse-tutorials.github.io/RWorkflow-NWFSC-2022/)** Eli Holmes (NWFSC) Week 4 Intro to Scrum using GitHub issues and project boards. This week will focus on the most popular Agile methodology: Scrum. Scrum is a lightweight and flexible framework that helps teams to work together better and learn with each cycle of work. It has 3 roles, 5 events (steps) that the team goes through during a time-boxed period of work. I will show you how to set up and run a Scrum Sprint using a GitHub project board. The real power of Scrum comes with teams by promoting high functioning teamwork, but you can use Scrum solo; you’ll just have to ‘switch hats’ when you take on different roles.  Link to video is on the website.
 * **Fridays starting May 20 2022 10-11am PDT** [Practical R and Git Workflow for NOAA Scientists](https://rverse-tutorials.github.io/RWorkflow-NWFSC-2022/). All sessions are recorded and links are on the website.
