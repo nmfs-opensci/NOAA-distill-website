@@ -16,832 +16,832 @@
           <link rel="shortcut icon" href=favicon.ico>
     
           <!--radix_placeholder_navigation_in_header-->
-          <meta name="distill:offset" content=""/>
-
-          <script type="application/javascript">
-
-            window.headroom_prevent_pin = false;
-
-            window.document.addEventListener("DOMContentLoaded", function (event) {
-
-              // initialize headroom for banner
-              var header = $('header').get(0);
-              var headerHeight = header.offsetHeight;
-              var headroom = new Headroom(header, {
-                tolerance: 5,
-                onPin : function() {
-                  if (window.headroom_prevent_pin) {
-                    window.headroom_prevent_pin = false;
-                    headroom.unpin();
-                  }
-                }
-              });
-              headroom.init();
-              if(window.location.hash)
+      <meta name="distill:offset" content=""/>
+      
+      <script type="application/javascript">
+      
+        window.headroom_prevent_pin = false;
+      
+        window.document.addEventListener("DOMContentLoaded", function (event) {
+      
+          // initialize headroom for banner
+          var header = $('header').get(0);
+          var headerHeight = header.offsetHeight;
+          var headroom = new Headroom(header, {
+            tolerance: 5,
+            onPin : function() {
+              if (window.headroom_prevent_pin) {
+                window.headroom_prevent_pin = false;
                 headroom.unpin();
-              $(header).addClass('headroom--transition');
-
-              // offset scroll location for banner on hash change
-              // (see: https://github.com/WickyNilliams/headroom.js/issues/38)
-              window.addEventListener("hashchange", function(event) {
-                window.scrollTo(0, window.pageYOffset - (headerHeight + 25));
-              });
-
-              // responsive menu
-              $('.distill-site-header').each(function(i, val) {
-                var topnav = $(this);
-                var toggle = topnav.find('.nav-toggle');
-                toggle.on('click', function() {
-                  topnav.toggleClass('responsive');
-                });
-              });
-
-              // nav dropdowns
-              $('.nav-dropbtn').click(function(e) {
-                $(this).next('.nav-dropdown-content').toggleClass('nav-dropdown-active');
-                $(this).parent().siblings('.nav-dropdown')
-                   .children('.nav-dropdown-content').removeClass('nav-dropdown-active');
-              });
-              $("body").click(function(e){
-                $('.nav-dropdown-content').removeClass('nav-dropdown-active');
-              });
-              $(".nav-dropdown").click(function(e){
-                e.stopPropagation();
-              });
-            });
-          </script>
-
-          <style type="text/css">
-
-          /* Theme (user-documented overrideables for nav appearance) */
-
-          .distill-site-nav {
-            color: rgba(255, 255, 255, 0.8);
-            background-color: #0F2E3D;
-            font-size: 15px;
-            font-weight: 300;
-          }
-
-          .distill-site-nav a {
-            color: inherit;
-            text-decoration: none;
-          }
-
-          .distill-site-nav a:hover {
-            color: white;
-          }
-
-          @media print {
-            .distill-site-nav {
-              display: none;
-            }
-          }
-
-          .distill-site-header {
-
-          }
-
-          .distill-site-footer {
-
-          }
-
-
-          /* Site Header */
-
-          .distill-site-header {
-            width: 100%;
-            box-sizing: border-box;
-            z-index: 3;
-          }
-
-          .distill-site-header .nav-left {
-            display: inline-block;
-            margin-left: 8px;
-          }
-
-          @media screen and (max-width: 768px) {
-            .distill-site-header .nav-left {
-              margin-left: 0;
-            }
-          }
-
-
-          .distill-site-header .nav-right {
-            float: right;
-            margin-right: 8px;
-          }
-
-          .distill-site-header a,
-          .distill-site-header .title {
-            display: inline-block;
-            text-align: center;
-            padding: 14px 10px 14px 10px;
-          }
-
-          .distill-site-header .title {
-            font-size: 18px;
-            min-width: 150px;
-          }
-
-          .distill-site-header .logo {
-            padding: 0;
-          }
-
-          .distill-site-header .logo img {
-            display: none;
-            max-height: 20px;
-            width: auto;
-            margin-bottom: -4px;
-          }
-
-          .distill-site-header .nav-image img {
-            max-height: 18px;
-            width: auto;
-            display: inline-block;
-            margin-bottom: -3px;
-          }
-
-
-
-          @media screen and (min-width: 1000px) {
-            .distill-site-header .logo img {
-              display: inline-block;
-            }
-            .distill-site-header .nav-left {
-              margin-left: 20px;
-            }
-            .distill-site-header .nav-right {
-              margin-right: 20px;
-            }
-            .distill-site-header .title {
-              padding-left: 12px;
-            }
-          }
-
-
-          .distill-site-header .nav-toggle {
-            display: none;
-          }
-
-          .nav-dropdown {
-            display: inline-block;
-            position: relative;
-          }
-
-          .nav-dropdown .nav-dropbtn {
-            border: none;
-            outline: none;
-            color: rgba(255, 255, 255, 0.8);
-            padding: 16px 10px;
-            background-color: transparent;
-            font-family: inherit;
-            font-size: inherit;
-            font-weight: inherit;
-            margin: 0;
-            margin-top: 1px;
-            z-index: 2;
-          }
-
-          .nav-dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: white;
-            min-width: 200px;
-            border: 1px solid rgba(0,0,0,0.15);
-            border-radius: 4px;
-            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
-            z-index: 1;
-            margin-top: 2px;
-            white-space: nowrap;
-            padding-top: 4px;
-            padding-bottom: 4px;
-          }
-
-          .nav-dropdown-content hr {
-            margin-top: 4px;
-            margin-bottom: 4px;
-            border: none;
-            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-          }
-
-          .nav-dropdown-active {
-            display: block;
-          }
-
-          .nav-dropdown-content a, .nav-dropdown-content .nav-dropdown-header {
-            color: black;
-            padding: 6px 24px;
-            text-decoration: none;
-            display: block;
-            text-align: left;
-          }
-
-          .nav-dropdown-content .nav-dropdown-header {
-            display: block;
-            padding: 5px 24px;
-            padding-bottom: 0;
-            text-transform: uppercase;
-            font-size: 14px;
-            color: #999999;
-            white-space: nowrap;
-          }
-
-          .nav-dropdown:hover .nav-dropbtn {
-            color: white;
-          }
-
-          .nav-dropdown-content a:hover {
-            background-color: #ddd;
-            color: black;
-          }
-
-          .nav-right .nav-dropdown-content {
-            margin-left: -45%;
-            right: 0;
-          }
-
-          @media screen and (max-width: 768px) {
-            .distill-site-header a, .distill-site-header .nav-dropdown  {display: none;}
-            .distill-site-header a.nav-toggle {
-              float: right;
-              display: block;
-            }
-            .distill-site-header .title {
-              margin-left: 0;
-            }
-            .distill-site-header .nav-right {
-              margin-right: 0;
-            }
-            .distill-site-header {
-              overflow: hidden;
-            }
-            .nav-right .nav-dropdown-content {
-              margin-left: 0;
-            }
-          }
-
-
-          @media screen and (max-width: 768px) {
-            .distill-site-header.responsive {position: relative; min-height: 500px; }
-            .distill-site-header.responsive a.nav-toggle {
-              position: absolute;
-              right: 0;
-              top: 0;
-            }
-            .distill-site-header.responsive a,
-            .distill-site-header.responsive .nav-dropdown {
-              display: block;
-              text-align: left;
-            }
-            .distill-site-header.responsive .nav-left,
-            .distill-site-header.responsive .nav-right {
-              width: 100%;
-            }
-            .distill-site-header.responsive .nav-dropdown {float: none;}
-            .distill-site-header.responsive .nav-dropdown-content {position: relative;}
-            .distill-site-header.responsive .nav-dropdown .nav-dropbtn {
-              display: block;
-              width: 100%;
-              text-align: left;
-            }
-          }
-
-          /* Site Footer */
-
-          .distill-site-footer {
-            width: 100%;
-            overflow: hidden;
-            box-sizing: border-box;
-            z-index: 3;
-            margin-top: 30px;
-            padding-top: 30px;
-            padding-bottom: 30px;
-            text-align: center;
-          }
-
-          /* Headroom */
-
-          d-title {
-            padding-top: 6rem;
-          }
-
-          @media print {
-            d-title {
-              padding-top: 4rem;
-            }
-          }
-
-          .headroom {
-            z-index: 1000;
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-          }
-
-          .headroom--transition {
-            transition: all .4s ease-in-out;
-          }
-
-          .headroom--unpinned {
-            top: -100px;
-          }
-
-          .headroom--pinned {
-            top: 0;
-          }
-
-          /* adjust viewport for navbar height */
-          /* helps vertically center bootstrap (non-distill) content */
-          .min-vh-100 {
-            min-height: calc(100vh - 100px) !important;
-          }
-
-          </style>
-
-          <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
-          <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet"/>
-          <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet"/>
-          <script src="site_libs/headroom-0.9.4/headroom.min.js"></script>
-          <!--/radix_placeholder_navigation_in_header-->
-          <!--radix_placeholder_site_in_header-->
-          <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-          <!--/radix_placeholder_site_in_header-->
-          
-          <style type="text/css">
-          body {
-            padding-top: 60px;
-          }
-          </style>
-          <style type="text/css">
-          /* base variables */
-
-          /* Edit the CSS properties in this file to create a custom
-             Distill theme. Only edit values in the right column
-             for each row; values shown are the CSS defaults.
-             To return any property to the default,
-             you may set its value to: unset
-             All rows must end with a semi-colon.                      */
-
-          /* Optional: embed custom fonts here with `@import`          */
-          /* This must remain at the top of this file.                 */
-
-
-
-          html {
-            /*-- Main font sizes --*/
-            --title-size:      50px;
-            --body-size:       1.06rem;
-            --code-size:       14px;
-            --aside-size:      12px;
-            --fig-cap-size:    13px;
-            /*-- Main font colors --*/
-            --title-color:     #000000;
-            --header-color:    rgba(0, 0, 0, 0.8);
-            --body-color:      rgba(0, 0, 0, 0.8);
-            --aside-color:     rgba(0, 0, 0, 0.6);
-            --fig-cap-color:   rgba(0, 0, 0, 0.6);
-            /*-- Specify custom fonts ~~~ must be imported above   --*/
-            --heading-font:    sans-serif;
-            --mono-font:       monospace;
-            --body-font:       sans-serif;
-            --navbar-font:     sans-serif;  /* websites + blogs only */
-          }
-
-          /*-- ARTICLE METADATA --*/
-          d-byline {
-            --heading-size:    0.6rem;
-            --heading-color:   rgba(0, 0, 0, 0.5);
-            --body-size:       0.8rem;
-            --body-color:      rgba(0, 0, 0, 0.8);
-          }
-
-          /*-- ARTICLE TABLE OF CONTENTS --*/
-          .d-contents {
-            --heading-size:    18px;
-            --contents-size:   13px;
-          }
-
-          /*-- ARTICLE APPENDIX --*/
-          d-appendix {
-            --heading-size:    15px;
-            --heading-color:   rgba(0, 0, 0, 0.65);
-            --text-size:       0.8em;
-            --text-color:      rgba(0, 0, 0, 0.5);
-          }
-
-          /*-- WEBSITE HEADER + FOOTER --*/
-          /* These properties only apply to Distill sites and blogs  */
-
-          .distill-site-header {
-            --title-size:       18px;
-            --text-color:       rgba(255, 255, 255, 0.8);
-            --text-size:        15px;
-            --hover-color:      white;
-            --bkgd-color:       #0F2E3D;
-          }
-
-          .distill-site-footer {
-            --text-color:       rgba(255, 255, 255, 0.8);
-            --text-size:        15px;
-            --hover-color:      white;
-            --bkgd-color:       #0F2E3D;
-          }
-
-          /*-- Additional custom styles --*/
-          /* Add any additional CSS rules below                      */
-          </style>
-          <style type="text/css">
-          /* base variables */
-
-          /* Edit the CSS properties in this file to create a custom
-             Distill theme. Only edit values in the right column
-             for each row; values shown are the CSS defaults.
-             To return any property to the default,
-             you may set its value to: unset
-             All rows must end with a semi-colon.                      */
-
-          /* Optional: embed custom fonts here with `@import`          */
-          /* This must remain at the top of this file.                 */
-
-          /* Font options: Sanchez (headers / serif), Nunito Sans (body / sans-serif) */
-          @import url('https://fonts.googleapis.com/css2?family=Sanchez&display=swap');
-
-          @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400&display=swap');
-
-          /* Code font (Roboto Mono) */
-          @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400&display=swap');
-
-          html {
-            /*-- Main font sizes --*/
-            --title-size:      50px;
-            --title-weight:    400;
-            --body-size:       1.06rem;
-            --code-size:       14px;
-            --aside-size:      12px;
-            --fig-cap-size:    13px;
-            /*-- Main font colors --*/
-            --title-color:     #003660;
-            --title-weight:    400;
-            --header-color:    rgba(4, 124, 145, 1);
-            --body-color:      rgba(0, 0, 0, 0.8);
-            --aside-color:     rgba(0, 0, 0, 0.6);
-            --fig-cap-color:   rgba(0, 0, 0, 0.6);
-            /*-- Specify custom fonts ~~~ must be imported above   --*/
-            --heading-font:    Sanchez;
-            --mono-font:       Roboto Mono;
-            --body-font:       Nunito Sans;
-            --navbar-font:     Nunito Sans;  /* websites + blogs only */
-          }
-
-          /*-- ARTICLE METADATA --*/
-          d-byline {
-            --heading-size:    0.6rem;
-            --heading-color:   rgba(0, 0, 0, 0.5);
-            --body-size:       0.8rem;
-            --body-color:      rgba(0, 0, 0, 0.8);
-          }
-
-          /*-- ARTICLE TABLE OF CONTENTS --*/
-          .d-contents {
-            --heading-size:    18px;
-            --contents-size:   13px;
-          }
-
-          /*-- ARTICLE APPENDIX --*/
-          d-appendix {
-            --heading-size:    15px;
-            --heading-color:   rgba(0, 0, 0, 0.65);
-            --text-size:       0.8em;
-            --text-color:      rgba(0, 0, 0, 0.5);
-          }
-
-          /*-- WEBSITE HEADER + FOOTER --*/
-          /* These properties only apply to Distill sites and blogs  */
-
-          .distill-site-header {
-            --title-size:       20px;
-            --text-color:       rgba(255, 255, 255, 0.8);
-            --text-size:        18px;
-            --hover-color:      white;
-            --bkgd-color:       #003660;
-          }
-
-          .distill-site-footer {
-            --text-color:       rgba(255, 255, 255, 0.8);
-            --text-size:        15px;
-            --hover-color:      white;
-            --bkgd-color:       #003660;
-          }
-
-          /*-- Additional custom styles --*/
-          /* Add any additional CSS rules below                      */
-
-          d-article h1 {
-              grid-column: text;
-              font-size: 40px;
-              font-weight: 360;
-              line-height: 1.1em;
-              margin: 0 0 0.5rem;
-              padding-top: 30px;
-          }
-
-
-          d-article h2 {
-              grid-column: text;
-              font-size: 32px;
-              font-weight: 200;
-              line-height: 1.1em;
-              margin: 0 0 0.5rem;
-              padding-top: 30px;
-          }
-
-          d-article h3 {
-              grid-column: text;
-              font-size: 24px;
-              font-weight: 400;
-              line-height: 1.1em;
-              margin: 0 0 0.5rem;
-              padding-top: 20px;
-              padding-bottom: 15px;
-          }
-
-          a.title {
-            font-style: bold;
-          }
-
-          a, .nav-dropdown .nav-dropbtn {
-            font-weight: 500;
-          }
-
-
-          /* Formatting tables (can update here or individually) */
-          table, td, tr, th {
-            border-collapse: collapse;
-            font-family: Nunito Sans;
-            border: 1px solid gainsboro;
-            vertical-align: top;
-          }
-
-          d-article table th, d-article table td {
-              font-size: 15px;
-              padding: 2px 8px;
-              border: 1px solid gainsboro;
-          }
-
-          code {
-            font-family: Roboto Mono;
-          }
-
-          .distill-site-header a, .distill-site-header .title {
-              text-align: left;
-              padding: 14px 14px 14px 14px;
-          }
-
-          d-title h1 {
-              grid-column: text;
-              font-size: 40px;
-              font-weight: 400;
-              line-height: 1.1em;
-              margin: 0 0 0.5rem;
-              color: #003660;
-          }
-
-          /* Update toc list font */
-          .d-contents nav ul li {
-              font-size: 20px;
-          }
-
-
-          /* Update overall layout (body width) */
-          @media(min-width: 1180px) {
-              .base-grid,
-              distill-header,
-              d-title,
-              d-abstract,
-              d-article,
-              d-appendix,
-              distill-appendix,
-              d-byline,
-              d-footnote-list,
-              d-citation-list,
-              distill-footer {
-                grid-template-columns: [screen-start] 0.5fr [page-start kicker-start] 30px [middle-start] 50px [text-start kicker-end] 100px 100px 100px 100px 100px 100px 100px 100px [text-end gutter-start] 30px [middle-end] 50px [page-end gutter-end] 0.5fr [screen-end];
-                grid-column-gap: 20px;
               }
-
-          /* Change navbar dropdown menu bg color */
-          .nav-dropdown-content a:hover {
-              background-color: #047C91;
-              color: black;
-          }
-             
-          /* Custom table filtering */
-             
-
-          * {
-            box-sizing: border-box;
-          }
-
-          #myInput {
-            background-image: url('/css/searchicon.png');
-            background-position: 10px 10px;
-            background-repeat: no-repeat;
-            width: 100%;
-            font-size: 16px;
-            padding: 12px 20px 12px 40px;
-            border: 1px solid #ddd;
-            margin-bottom: 12px;
-          }
-
-
-
-          </style>
+            }
+          });
+          headroom.init();
+          if(window.location.hash)
+            headroom.unpin();
+          $(header).addClass('headroom--transition');
+      
+          // offset scroll location for banner on hash change
+          // (see: https://github.com/WickyNilliams/headroom.js/issues/38)
+          window.addEventListener("hashchange", function(event) {
+            window.scrollTo(0, window.pageYOffset - (headerHeight + 25));
+          });
+      
+          // responsive menu
+          $('.distill-site-header').each(function(i, val) {
+            var topnav = $(this);
+            var toggle = topnav.find('.nav-toggle');
+            toggle.on('click', function() {
+              topnav.toggleClass('responsive');
+            });
+          });
+      
+          // nav dropdowns
+          $('.nav-dropbtn').click(function(e) {
+            $(this).next('.nav-dropdown-content').toggleClass('nav-dropdown-active');
+            $(this).parent().siblings('.nav-dropdown')
+               .children('.nav-dropdown-content').removeClass('nav-dropdown-active');
+          });
+          $("body").click(function(e){
+            $('.nav-dropdown-content').removeClass('nav-dropdown-active');
+          });
+          $(".nav-dropdown").click(function(e){
+            e.stopPropagation();
+          });
+        });
+      </script>
+      
+      <style type="text/css">
+      
+      /* Theme (user-documented overrideables for nav appearance) */
+      
+      .distill-site-nav {
+        color: rgba(255, 255, 255, 0.8);
+        background-color: #0F2E3D;
+        font-size: 15px;
+        font-weight: 300;
+      }
+      
+      .distill-site-nav a {
+        color: inherit;
+        text-decoration: none;
+      }
+      
+      .distill-site-nav a:hover {
+        color: white;
+      }
+      
+      @media print {
+        .distill-site-nav {
+          display: none;
+        }
+      }
+      
+      .distill-site-header {
+      
+      }
+      
+      .distill-site-footer {
+      
+      }
+      
+      
+      /* Site Header */
+      
+      .distill-site-header {
+        width: 100%;
+        box-sizing: border-box;
+        z-index: 3;
+      }
+      
+      .distill-site-header .nav-left {
+        display: inline-block;
+        margin-left: 8px;
+      }
+      
+      @media screen and (max-width: 768px) {
+        .distill-site-header .nav-left {
+          margin-left: 0;
+        }
+      }
+      
+      
+      .distill-site-header .nav-right {
+        float: right;
+        margin-right: 8px;
+      }
+      
+      .distill-site-header a,
+      .distill-site-header .title {
+        display: inline-block;
+        text-align: center;
+        padding: 14px 10px 14px 10px;
+      }
+      
+      .distill-site-header .title {
+        font-size: 18px;
+        min-width: 150px;
+      }
+      
+      .distill-site-header .logo {
+        padding: 0;
+      }
+      
+      .distill-site-header .logo img {
+        display: none;
+        max-height: 20px;
+        width: auto;
+        margin-bottom: -4px;
+      }
+      
+      .distill-site-header .nav-image img {
+        max-height: 18px;
+        width: auto;
+        display: inline-block;
+        margin-bottom: -3px;
+      }
+      
+      
+      
+      @media screen and (min-width: 1000px) {
+        .distill-site-header .logo img {
+          display: inline-block;
+        }
+        .distill-site-header .nav-left {
+          margin-left: 20px;
+        }
+        .distill-site-header .nav-right {
+          margin-right: 20px;
+        }
+        .distill-site-header .title {
+          padding-left: 12px;
+        }
+      }
+      
+      
+      .distill-site-header .nav-toggle {
+        display: none;
+      }
+      
+      .nav-dropdown {
+        display: inline-block;
+        position: relative;
+      }
+      
+      .nav-dropdown .nav-dropbtn {
+        border: none;
+        outline: none;
+        color: rgba(255, 255, 255, 0.8);
+        padding: 16px 10px;
+        background-color: transparent;
+        font-family: inherit;
+        font-size: inherit;
+        font-weight: inherit;
+        margin: 0;
+        margin-top: 1px;
+        z-index: 2;
+      }
+      
+      .nav-dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: white;
+        min-width: 200px;
+        border: 1px solid rgba(0,0,0,0.15);
+        border-radius: 4px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
+        z-index: 1;
+        margin-top: 2px;
+        white-space: nowrap;
+        padding-top: 4px;
+        padding-bottom: 4px;
+      }
+      
+      .nav-dropdown-content hr {
+        margin-top: 4px;
+        margin-bottom: 4px;
+        border: none;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+      }
+      
+      .nav-dropdown-active {
+        display: block;
+      }
+      
+      .nav-dropdown-content a, .nav-dropdown-content .nav-dropdown-header {
+        color: black;
+        padding: 6px 24px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+      }
+      
+      .nav-dropdown-content .nav-dropdown-header {
+        display: block;
+        padding: 5px 24px;
+        padding-bottom: 0;
+        text-transform: uppercase;
+        font-size: 14px;
+        color: #999999;
+        white-space: nowrap;
+      }
+      
+      .nav-dropdown:hover .nav-dropbtn {
+        color: white;
+      }
+      
+      .nav-dropdown-content a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+      
+      .nav-right .nav-dropdown-content {
+        margin-left: -45%;
+        right: 0;
+      }
+      
+      @media screen and (max-width: 768px) {
+        .distill-site-header a, .distill-site-header .nav-dropdown  {display: none;}
+        .distill-site-header a.nav-toggle {
+          float: right;
+          display: block;
+        }
+        .distill-site-header .title {
+          margin-left: 0;
+        }
+        .distill-site-header .nav-right {
+          margin-right: 0;
+        }
+        .distill-site-header {
+          overflow: hidden;
+        }
+        .nav-right .nav-dropdown-content {
+          margin-left: 0;
+        }
+      }
+      
+      
+      @media screen and (max-width: 768px) {
+        .distill-site-header.responsive {position: relative; min-height: 500px; }
+        .distill-site-header.responsive a.nav-toggle {
+          position: absolute;
+          right: 0;
+          top: 0;
+        }
+        .distill-site-header.responsive a,
+        .distill-site-header.responsive .nav-dropdown {
+          display: block;
+          text-align: left;
+        }
+        .distill-site-header.responsive .nav-left,
+        .distill-site-header.responsive .nav-right {
+          width: 100%;
+        }
+        .distill-site-header.responsive .nav-dropdown {float: none;}
+        .distill-site-header.responsive .nav-dropdown-content {position: relative;}
+        .distill-site-header.responsive .nav-dropdown .nav-dropbtn {
+          display: block;
+          width: 100%;
+          text-align: left;
+        }
+      }
+      
+      /* Site Footer */
+      
+      .distill-site-footer {
+        width: 100%;
+        overflow: hidden;
+        box-sizing: border-box;
+        z-index: 3;
+        margin-top: 30px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        text-align: center;
+      }
+      
+      /* Headroom */
+      
+      d-title {
+        padding-top: 6rem;
+      }
+      
+      @media print {
+        d-title {
+          padding-top: 4rem;
+        }
+      }
+      
+      .headroom {
+        z-index: 1000;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+      }
+      
+      .headroom--transition {
+        transition: all .4s ease-in-out;
+      }
+      
+      .headroom--unpinned {
+        top: -100px;
+      }
+      
+      .headroom--pinned {
+        top: 0;
+      }
+      
+      /* adjust viewport for navbar height */
+      /* helps vertically center bootstrap (non-distill) content */
+      .min-vh-100 {
+        min-height: calc(100vh - 100px) !important;
+      }
+      
+      </style>
+      
+      <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+      <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet"/>
+      <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet"/>
+      <script src="site_libs/headroom-0.9.4/headroom.min.js"></script>
+      <!--/radix_placeholder_navigation_in_header-->
+          <!--radix_placeholder_site_in_header-->
+      <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+      <!--/radix_placeholder_site_in_header-->
+          
+      <style type="text/css">
+      body {
+        padding-top: 60px;
+      }
+      </style>
           <style type="text/css">
-          /* base style */
-
-          /* FONT FAMILIES */
-
-          :root {
-            --heading-default: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
-            --mono-default: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
-            --body-default: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
+      /* base variables */
+      
+      /* Edit the CSS properties in this file to create a custom
+         Distill theme. Only edit values in the right column
+         for each row; values shown are the CSS defaults.
+         To return any property to the default,
+         you may set its value to: unset
+         All rows must end with a semi-colon.                      */
+      
+      /* Optional: embed custom fonts here with `@import`          */
+      /* This must remain at the top of this file.                 */
+      
+      
+      
+      html {
+        /*-- Main font sizes --*/
+        --title-size:      50px;
+        --body-size:       1.06rem;
+        --code-size:       14px;
+        --aside-size:      12px;
+        --fig-cap-size:    13px;
+        /*-- Main font colors --*/
+        --title-color:     #000000;
+        --header-color:    rgba(0, 0, 0, 0.8);
+        --body-color:      rgba(0, 0, 0, 0.8);
+        --aside-color:     rgba(0, 0, 0, 0.6);
+        --fig-cap-color:   rgba(0, 0, 0, 0.6);
+        /*-- Specify custom fonts ~~~ must be imported above   --*/
+        --heading-font:    sans-serif;
+        --mono-font:       monospace;
+        --body-font:       sans-serif;
+        --navbar-font:     sans-serif;  /* websites + blogs only */
+      }
+      
+      /*-- ARTICLE METADATA --*/
+      d-byline {
+        --heading-size:    0.6rem;
+        --heading-color:   rgba(0, 0, 0, 0.5);
+        --body-size:       0.8rem;
+        --body-color:      rgba(0, 0, 0, 0.8);
+      }
+      
+      /*-- ARTICLE TABLE OF CONTENTS --*/
+      .d-contents {
+        --heading-size:    18px;
+        --contents-size:   13px;
+      }
+      
+      /*-- ARTICLE APPENDIX --*/
+      d-appendix {
+        --heading-size:    15px;
+        --heading-color:   rgba(0, 0, 0, 0.65);
+        --text-size:       0.8em;
+        --text-color:      rgba(0, 0, 0, 0.5);
+      }
+      
+      /*-- WEBSITE HEADER + FOOTER --*/
+      /* These properties only apply to Distill sites and blogs  */
+      
+      .distill-site-header {
+        --title-size:       18px;
+        --text-color:       rgba(255, 255, 255, 0.8);
+        --text-size:        15px;
+        --hover-color:      white;
+        --bkgd-color:       #0F2E3D;
+      }
+      
+      .distill-site-footer {
+        --text-color:       rgba(255, 255, 255, 0.8);
+        --text-size:        15px;
+        --hover-color:      white;
+        --bkgd-color:       #0F2E3D;
+      }
+      
+      /*-- Additional custom styles --*/
+      /* Add any additional CSS rules below                      */
+      </style>
+      <style type="text/css">
+      /* base variables */
+      
+      /* Edit the CSS properties in this file to create a custom
+         Distill theme. Only edit values in the right column
+         for each row; values shown are the CSS defaults.
+         To return any property to the default,
+         you may set its value to: unset
+         All rows must end with a semi-colon.                      */
+      
+      /* Optional: embed custom fonts here with `@import`          */
+      /* This must remain at the top of this file.                 */
+      
+      /* Font options: Sanchez (headers / serif), Nunito Sans (body / sans-serif) */
+      @import url('https://fonts.googleapis.com/css2?family=Sanchez&display=swap');
+      
+      @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400&display=swap');
+      
+      /* Code font (Roboto Mono) */
+      @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400&display=swap');
+      
+      html {
+        /*-- Main font sizes --*/
+        --title-size:      50px;
+        --title-weight:    400;
+        --body-size:       1.06rem;
+        --code-size:       14px;
+        --aside-size:      12px;
+        --fig-cap-size:    13px;
+        /*-- Main font colors --*/
+        --title-color:     #003660;
+        --title-weight:    400;
+        --header-color:    rgba(4, 124, 145, 1);
+        --body-color:      rgba(0, 0, 0, 0.8);
+        --aside-color:     rgba(0, 0, 0, 0.6);
+        --fig-cap-color:   rgba(0, 0, 0, 0.6);
+        /*-- Specify custom fonts ~~~ must be imported above   --*/
+        --heading-font:    Sanchez;
+        --mono-font:       Roboto Mono;
+        --body-font:       Nunito Sans;
+        --navbar-font:     Nunito Sans;  /* websites + blogs only */
+      }
+      
+      /*-- ARTICLE METADATA --*/
+      d-byline {
+        --heading-size:    0.6rem;
+        --heading-color:   rgba(0, 0, 0, 0.5);
+        --body-size:       0.8rem;
+        --body-color:      rgba(0, 0, 0, 0.8);
+      }
+      
+      /*-- ARTICLE TABLE OF CONTENTS --*/
+      .d-contents {
+        --heading-size:    18px;
+        --contents-size:   13px;
+      }
+      
+      /*-- ARTICLE APPENDIX --*/
+      d-appendix {
+        --heading-size:    15px;
+        --heading-color:   rgba(0, 0, 0, 0.65);
+        --text-size:       0.8em;
+        --text-color:      rgba(0, 0, 0, 0.5);
+      }
+      
+      /*-- WEBSITE HEADER + FOOTER --*/
+      /* These properties only apply to Distill sites and blogs  */
+      
+      .distill-site-header {
+        --title-size:       20px;
+        --text-color:       rgba(255, 255, 255, 0.8);
+        --text-size:        18px;
+        --hover-color:      white;
+        --bkgd-color:       #003660;
+      }
+      
+      .distill-site-footer {
+        --text-color:       rgba(255, 255, 255, 0.8);
+        --text-size:        15px;
+        --hover-color:      white;
+        --bkgd-color:       #003660;
+      }
+      
+      /*-- Additional custom styles --*/
+      /* Add any additional CSS rules below                      */
+      
+      d-article h1 {
+          grid-column: text;
+          font-size: 40px;
+          font-weight: 360;
+          line-height: 1.1em;
+          margin: 0 0 0.5rem;
+          padding-top: 30px;
+      }
+      
+      
+      d-article h2 {
+          grid-column: text;
+          font-size: 32px;
+          font-weight: 200;
+          line-height: 1.1em;
+          margin: 0 0 0.5rem;
+          padding-top: 30px;
+      }
+      
+      d-article h3 {
+          grid-column: text;
+          font-size: 24px;
+          font-weight: 400;
+          line-height: 1.1em;
+          margin: 0 0 0.5rem;
+          padding-top: 20px;
+          padding-bottom: 15px;
+      }
+      
+      a.title {
+        font-style: bold;
+      }
+      
+      a, .nav-dropdown .nav-dropbtn {
+        font-weight: 500;
+      }
+      
+      
+      /* Formatting tables (can update here or individually) */
+      table, td, tr, th {
+        border-collapse: collapse;
+        font-family: Nunito Sans;
+        border: 1px solid gainsboro;
+        vertical-align: top;
+      }
+      
+      d-article table th, d-article table td {
+          font-size: 15px;
+          padding: 2px 8px;
+          border: 1px solid gainsboro;
+      }
+      
+      code {
+        font-family: Roboto Mono;
+      }
+      
+      .distill-site-header a, .distill-site-header .title {
+          text-align: left;
+          padding: 14px 14px 14px 14px;
+      }
+      
+      d-title h1 {
+          grid-column: text;
+          font-size: 40px;
+          font-weight: 400;
+          line-height: 1.1em;
+          margin: 0 0 0.5rem;
+          color: #003660;
+      }
+      
+      /* Update toc list font */
+      .d-contents nav ul li {
+          font-size: 20px;
+      }
+      
+      
+      /* Update overall layout (body width) */
+      @media(min-width: 1180px) {
+          .base-grid,
+          distill-header,
+          d-title,
+          d-abstract,
+          d-article,
+          d-appendix,
+          distill-appendix,
+          d-byline,
+          d-footnote-list,
+          d-citation-list,
+          distill-footer {
+            grid-template-columns: [screen-start] 0.5fr [page-start kicker-start] 30px [middle-start] 50px [text-start kicker-end] 100px 100px 100px 100px 100px 100px 100px 100px [text-end gutter-start] 30px [middle-end] 50px [page-end gutter-end] 0.5fr [screen-end];
+            grid-column-gap: 20px;
           }
-
-          body,
-          .posts-list .post-preview p,
-          .posts-list .description p {
-            font-family: var(--body-font), var(--body-default);
-          }
-
-          h1, h2, h3, h4, h5, h6,
-          .posts-list .post-preview h2,
-          .posts-list .description h2 {
-            font-family: var(--heading-font), var(--heading-default);
-          }
-
-          d-article div.sourceCode code,
-          d-article pre code {
-            font-family: var(--mono-font), var(--mono-default);
-          }
-
-
-          /*-- TITLE --*/
-          d-title h1,
-          .posts-list > h1 {
-            color: var(--title-color, black);
-          }
-
-          d-title h1 {
-            font-size: var(--title-size, 50px);
-          }
-
-          /*-- HEADERS --*/
-          d-article h1,
-          d-article h2,
-          d-article h3,
-          d-article h4,
-          d-article h5,
-          d-article h6 {
-            color: var(--header-color, rgba(0, 0, 0, 0.8));
-          }
-
-          /*-- BODY --*/
-          d-article > p,  /* only text inside of <p> tags */
-          d-article > ul, /* lists */
-          d-article > ol {
-            color: var(--body-color, rgba(0, 0, 0, 0.8));
-            font-size: var(--body-size, 1.06rem);
-          }
-
-
-          /*-- CODE --*/
-          d-article div.sourceCode code,
-          d-article pre code {
-            font-size: var(--code-size, 14px);
-          }
-
-          /*-- ASIDE --*/
-          d-article aside {
-            font-size: var(--aside-size, 12px);
-            color: var(--aside-color, rgba(0, 0, 0, 0.6));
-          }
-
-          /*-- FIGURE CAPTIONS --*/
-          figure .caption,
-          figure figcaption,
-          .figure .caption {
-            font-size: var(--fig-cap-size, 13px);
-            color: var(--fig-cap-color, rgba(0, 0, 0, 0.6));
-          }
-
-          /*-- METADATA --*/
-          d-byline h3 {
-            font-size: var(--heading-size, 0.6rem);
-            color: var(--heading-color, rgba(0, 0, 0, 0.5));
-          }
-
-          d-byline {
-            font-size: var(--body-size, 0.8rem);
-            color: var(--body-color, rgba(0, 0, 0, 0.8));
-          }
-
-          d-byline a,
-          d-article d-byline a {
-            color: var(--body-color, rgba(0, 0, 0, 0.8));
-          }
-
-          /*-- TABLE OF CONTENTS --*/
-          .d-contents nav h3 {
-            font-size: var(--heading-size, 18px);
-          }
-
-          .d-contents nav a {
-            font-size: var(--contents-size, 13px);
-          }
-
-          /*-- APPENDIX --*/
-          d-appendix h3 {
-            font-size: var(--heading-size, 15px);
-            color: var(--heading-color, rgba(0, 0, 0, 0.65));
-          }
-
-          d-appendix {
-            font-size: var(--text-size, 0.8em);
-            color: var(--text-color, rgba(0, 0, 0, 0.5));
-          }
-
-          d-appendix d-footnote-list a.footnote-backlink {
-            color: var(--text-color, rgba(0, 0, 0, 0.5));
-          }
-
-          /*-- WEBSITE HEADER + FOOTER --*/
-          .distill-site-header .title {
-            font-size: var(--title-size, 18px);
-            font-family: var(--navbar-font), var(--heading-default);
-          }
-
-          .distill-site-header a,
-          .nav-dropdown .nav-dropbtn {
-            font-family: var(--navbar-font), var(--heading-default);
-          }
-
-          .nav-dropdown .nav-dropbtn {
-            color: var(--text-color, rgba(255, 255, 255, 0.8));
-            font-size: var(--text-size, 15px);
-          }
-
-          .distill-site-header a:hover,
-          .nav-dropdown:hover .nav-dropbtn {
-            color: var(--hover-color, white);
-          }
-
-          .distill-site-header {
-            font-size: var(--text-size, 15px);
-            color: var(--text-color, rgba(255, 255, 255, 0.8));
-            background-color: var(--bkgd-color, #0F2E3D);
-          }
-
-          .distill-site-footer {
-            font-size: var(--text-size, 15px);
-            color: var(--text-color, rgba(255, 255, 255, 0.8));
-            background-color: var(--bkgd-color, #0F2E3D);
-          }
-
-          .distill-site-footer a:hover {
-            color: var(--hover-color, white);
-          }</style>
-          <script src="/Library/Frameworks/R.framework/Versions/4.1/Resources/library/rmarkdown/rmd/h/pandoc/header-attrs.js"></script>
+      
+      /* Change navbar dropdown menu bg color */
+      .nav-dropdown-content a:hover {
+          background-color: #047C91;
+          color: black;
+      }
+         
+      /* Custom table filtering */
+         
+      
+      * {
+        box-sizing: border-box;
+      }
+      
+      #myInput {
+        background-image: url('/css/searchicon.png');
+        background-position: 10px 10px;
+        background-repeat: no-repeat;
+        width: 100%;
+        font-size: 16px;
+        padding: 12px 20px 12px 40px;
+        border: 1px solid #ddd;
+        margin-bottom: 12px;
+      }
+      
+      
+      
+      </style>
+      <style type="text/css">
+      /* base style */
+      
+      /* FONT FAMILIES */
+      
+      :root {
+        --heading-default: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
+        --mono-default: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+        --body-default: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
+      }
+      
+      body,
+      .posts-list .post-preview p,
+      .posts-list .description p {
+        font-family: var(--body-font), var(--body-default);
+      }
+      
+      h1, h2, h3, h4, h5, h6,
+      .posts-list .post-preview h2,
+      .posts-list .description h2 {
+        font-family: var(--heading-font), var(--heading-default);
+      }
+      
+      d-article div.sourceCode code,
+      d-article pre code {
+        font-family: var(--mono-font), var(--mono-default);
+      }
+      
+      
+      /*-- TITLE --*/
+      d-title h1,
+      .posts-list > h1 {
+        color: var(--title-color, black);
+      }
+      
+      d-title h1 {
+        font-size: var(--title-size, 50px);
+      }
+      
+      /*-- HEADERS --*/
+      d-article h1,
+      d-article h2,
+      d-article h3,
+      d-article h4,
+      d-article h5,
+      d-article h6 {
+        color: var(--header-color, rgba(0, 0, 0, 0.8));
+      }
+      
+      /*-- BODY --*/
+      d-article > p,  /* only text inside of <p> tags */
+      d-article > ul, /* lists */
+      d-article > ol {
+        color: var(--body-color, rgba(0, 0, 0, 0.8));
+        font-size: var(--body-size, 1.06rem);
+      }
+      
+      
+      /*-- CODE --*/
+      d-article div.sourceCode code,
+      d-article pre code {
+        font-size: var(--code-size, 14px);
+      }
+      
+      /*-- ASIDE --*/
+      d-article aside {
+        font-size: var(--aside-size, 12px);
+        color: var(--aside-color, rgba(0, 0, 0, 0.6));
+      }
+      
+      /*-- FIGURE CAPTIONS --*/
+      figure .caption,
+      figure figcaption,
+      .figure .caption {
+        font-size: var(--fig-cap-size, 13px);
+        color: var(--fig-cap-color, rgba(0, 0, 0, 0.6));
+      }
+      
+      /*-- METADATA --*/
+      d-byline h3 {
+        font-size: var(--heading-size, 0.6rem);
+        color: var(--heading-color, rgba(0, 0, 0, 0.5));
+      }
+      
+      d-byline {
+        font-size: var(--body-size, 0.8rem);
+        color: var(--body-color, rgba(0, 0, 0, 0.8));
+      }
+      
+      d-byline a,
+      d-article d-byline a {
+        color: var(--body-color, rgba(0, 0, 0, 0.8));
+      }
+      
+      /*-- TABLE OF CONTENTS --*/
+      .d-contents nav h3 {
+        font-size: var(--heading-size, 18px);
+      }
+      
+      .d-contents nav a {
+        font-size: var(--contents-size, 13px);
+      }
+      
+      /*-- APPENDIX --*/
+      d-appendix h3 {
+        font-size: var(--heading-size, 15px);
+        color: var(--heading-color, rgba(0, 0, 0, 0.65));
+      }
+      
+      d-appendix {
+        font-size: var(--text-size, 0.8em);
+        color: var(--text-color, rgba(0, 0, 0, 0.5));
+      }
+      
+      d-appendix d-footnote-list a.footnote-backlink {
+        color: var(--text-color, rgba(0, 0, 0, 0.5));
+      }
+      
+      /*-- WEBSITE HEADER + FOOTER --*/
+      .distill-site-header .title {
+        font-size: var(--title-size, 18px);
+        font-family: var(--navbar-font), var(--heading-default);
+      }
+      
+      .distill-site-header a,
+      .nav-dropdown .nav-dropbtn {
+        font-family: var(--navbar-font), var(--heading-default);
+      }
+      
+      .nav-dropdown .nav-dropbtn {
+        color: var(--text-color, rgba(255, 255, 255, 0.8));
+        font-size: var(--text-size, 15px);
+      }
+      
+      .distill-site-header a:hover,
+      .nav-dropdown:hover .nav-dropbtn {
+        color: var(--hover-color, white);
+      }
+      
+      .distill-site-header {
+        font-size: var(--text-size, 15px);
+        color: var(--text-color, rgba(255, 255, 255, 0.8));
+        background-color: var(--bkgd-color, #0F2E3D);
+      }
+      
+      .distill-site-footer {
+        font-size: var(--text-size, 15px);
+        color: var(--text-color, rgba(255, 255, 255, 0.8));
+        background-color: var(--bkgd-color, #0F2E3D);
+      }
+      
+      .distill-site-footer a:hover {
+        color: var(--hover-color, white);
+      }</style>
+          <script src="index_files/accessible-code-block-0.0.1/empty-anchor.js"></script>
     
     
   </head>
   <body>
 
           <!--radix_placeholder_navigation_before_body-->
-          <header class="header header--fixed" role="banner">
-          <nav class="distill-site-nav distill-site-header">
-          <div class="nav-left">
-          <a class="logo">
-          <img src="images/nmfs-r-ug-logo.png" alt="Logo"/>
-          </a>
-          <a href="index.html" class="title">NMFS R UG</a>
-          </div>
-          <div class="nav-right">
-          <a href="index.html">Upcoming events</a>
-          <a href="Meetings.html">Search past events</a>
-          <a href="workshops.html">Workshops</a>
-          <a href="https://github.com/nmfs-openscapes/.github/wiki">Wiki</a>
-          <a href="resources.html">Resources</a>
-          <a href="https://github.com/nmfs-opensci/NMFS-R-UG">
-          <i class="fab fa-github" aria-hidden="true"></i>
-          </a>
-          <a href="javascript:void(0);" class="nav-toggle">&#9776;</a>
-          </div>
-          </nav>
-          </header>
-          <!--/radix_placeholder_navigation_before_body-->
+      <header class="header header--fixed" role="banner">
+      <nav class="distill-site-nav distill-site-header">
+      <div class="nav-left">
+      <a class="logo">
+      <img src="images/nmfs-r-ug-logo.png" alt="Logo"/>
+      </a>
+      <a href="index.html" class="title">NMFS R UG</a>
+      </div>
+      <div class="nav-right">
+      <a href="index.html">Upcoming events</a>
+      <a href="Meetings.html">Search past events</a>
+      <a href="workshops.html">Workshops</a>
+      <a href="https://github.com/nmfs-openscapes/.github/wiki">Wiki</a>
+      <a href="resources.html">Resources</a>
+      <a href="https://github.com/nmfs-opensci/NMFS-R-UG">
+      <i class="fab fa-github" aria-hidden="true"></i>
+      </a>
+      <a href="javascript:void(0);" class="nav-toggle">&#9776;</a>
+      </div>
+      </nav>
+      </header>
+      <!--/radix_placeholder_navigation_before_body-->
           <!--radix_placeholder_site_before_body-->
-          <!--/radix_placeholder_site_before_body-->
+      <!--/radix_placeholder_site_before_body-->
     
     <div class="container-fluid d-none d-lg-block d-xl-block">
       <div class="d-flex row flex-row vh-100">
@@ -890,12 +890,7 @@
             </style>
             <div>
             <div style="margin-right:auto; margin-left:auto;">
-            <a href="https://forms.gle/Xf8hr48SuyP1cNkn8">Join our
-            Google Space! (NOAA only)</a> — <a
-            href="https://calendar.google.com/calendar/embed?src=noaa.gov_60rfn7ml9rpchl63vs4af9n018%40group.calendar.google.com&amp;ctz=America%2FLos_Angeles">Calendar
-            (NOAA only)</a> — <a
-            href="https://forms.gle/GQVNLnTQ7SHCNiFZA">Contact NMFS-RUG
-            (NOAA only)</a>
+            <a href="https://forms.gle/Xf8hr48SuyP1cNkn8">Join our Google Space! (NOAA only)</a> — <a href="https://calendar.google.com/calendar/embed?src=noaa.gov_60rfn7ml9rpchl63vs4af9n018%40group.calendar.google.com&amp;ctz=America%2FLos_Angeles">Calendar (NOAA only)</a> — <a href="https://forms.gle/GQVNLnTQ7SHCNiFZA">Contact NMFS-RUG (NOAA only)</a>
             </div>
             </div>
             <p>
@@ -905,27 +900,8 @@
             <div id="upcoming-nmfs-r-ug-events" class="section level2">
             <h2>Upcoming NMFS R UG Events</h2>
             <ul>
-            <li><p><strong>Tues July 19 2022 12-1pm PDT. NMFS R UG
-            Monthly Meeting</strong> Christine Stawitz (NWFSC) will
-            share how she is using the GitHub API to create status
-            emails in R. After the demo, we’ll discuss how we can use
-            Christine’s efforts to possibly create a user-friendly R
-            package that everyone can benefit from! <a
-            href="https://calendar.google.com/event?action=TEMPLATE&amp;tmeid=N25mNjYzdmFxaGg3OTcxdDJucjdiYzYzNmsgZWxpLmhvbG1lc0Bub2FhLmdvdg&amp;tmsrc=eli.holmes%40noaa.gov">Add
-            to your calendar</a></p></li>
-            <li><p><strong>Fri July 15 2022 10-11am PDT. Week 6 of <a
-            href="https://rverse-tutorials.github.io/RWorkflow-NWFSC-2022/">Practical
-            R and Git Workflow for NOAA Scientists</a></strong> Eli
-            Holmes (NWFSC) Week 6 R Markdown for writing reports. There
-            are many online tutorials for R Markdown which will cover
-            the basics. I will focus on R Markdown for fisheries (or
-            other) reports. When the data change (which happens often),
-            we have to remake tables (and graphs) and update the numbers
-            in text. For big reports, this is time-consuming and creates
-            errors. I’ll show you how to use R Markdown to automate this
-            process, so you are not manually remaking reports. <a
-            href="https://noaanmfs-meets.webex.com/noaanmfs-meets/j.php?MTID=m78f662eb57d19d05c40c45a722d81d5e">Join
-            with WebEx</a></p></li>
+            <li><p><strong>Tues July 19 2022 12-1pm PDT. NMFS R UG Monthly Meeting</strong> Christine Stawitz (NWFSC) will share how she is using the GitHub API to create status emails in R. After the demo, we’ll discuss how we can use Christine’s efforts to possibly create a user-friendly R package that everyone can benefit from! <a href="https://calendar.google.com/event?action=TEMPLATE&amp;tmeid=N25mNjYzdmFxaGg3OTcxdDJucjdiYzYzNmsgZWxpLmhvbG1lc0Bub2FhLmdvdg&amp;tmsrc=eli.holmes%40noaa.gov">Add to your calendar</a></p></li>
+            <li><p><strong>Fri July 15 2022 10-11am PDT. Week 6 of <a href="https://rverse-tutorials.github.io/RWorkflow-NWFSC-2022/">Practical R and Git Workflow for NOAA Scientists</a></strong> Eli Holmes (NWFSC) Week 6 R Markdown for writing reports. There are many online tutorials for R Markdown which will cover the basics. I will focus on R Markdown for fisheries (or other) reports. When the data change (which happens often), we have to remake tables (and graphs) and update the numbers in text. For big reports, this is time-consuming and creates errors. I’ll show you how to use R Markdown to automate this process, so you are not manually remaking reports. <a href="https://noaanmfs-meets.webex.com/noaanmfs-meets/j.php?MTID=m78f662eb57d19d05c40c45a722d81d5e">Join with WebEx</a></p></li>
             </ul>
             <center>
             <button id="button" class="button">
@@ -933,150 +909,18 @@
             </button>
             </center>
             <div id="wrapper" class="open">
-            <p>See the “Search past events” tab and our <a
-            href="https://docs.google.com/document/d/1mrgtrSXVtPCTxrpBa_0ZbxEsnK9vcQzs6RIV3f-OTPw/edit?usp=sharing">Past
-            meeting notes</a> for info on past events and links to
-            things like notes and video for past events.</p>
-            <p><br/> * <strong>Fri July 15 2022 10-11am PDT. Week 6 of
-            <a
-            href="https://rverse-tutorials.github.io/RWorkflow-NWFSC-2022/">Practical
-            R and Git Workflow for NOAA Scientists</a></strong> Eli
-            Holmes (NWFSC) Week 5 Documenting and sharing R packages
-            with RStudio and GitHub. Link to video is on the website. *
-            <strong>Fri July 8 2022 10-11am PDT. Week 5 of <a
-            href="https://rverse-tutorials.github.io/RWorkflow-NWFSC-2022/">Practical
-            R and Git Workflow for NOAA Scientists</a></strong> Eli
-            Holmes (NWFSC) Week 5 Intro to making R packages in RStudio.
-            Link to video is on the website. * <strong>Fri June 10 2022
-            10-11am PDT. Week 4 of <a
-            href="https://rverse-tutorials.github.io/RWorkflow-NWFSC-2022/">Practical
-            R and Git Workflow for NOAA Scientists</a></strong> Eli
-            Holmes (NWFSC) Week 4 Intro to Scrum using GitHub issues and
-            project boards. This week will focus on the most popular
-            Agile methodology: Scrum. Scrum is a lightweight and
-            flexible framework that helps teams to work together better
-            and learn with each cycle of work. It has 3 roles, 5 events
-            (steps) that the team goes through during a time-boxed
-            period of work. I will show you how to set up and run a
-            Scrum Sprint using a GitHub project board. The real power of
-            Scrum comes with teams by promoting high functioning
-            teamwork, but you can use Scrum solo; you’ll just have to
-            ‘switch hats’ when you take on different roles. Link to
-            video is on the website. * <strong>Fridays starting May 20
-            2022 10-11am PDT</strong> <a
-            href="https://rverse-tutorials.github.io/RWorkflow-NWFSC-2022/">Practical
-            R and Git Workflow for NOAA Scientists</a>. All sessions are
-            recorded and links are on the website. * <a
-            href="https://tinyurl.com/nmfs-rug-win-calendar">Win-Spr
-            2022 NMFS R UG Monthly Events Flyer</a> * <strong>Tues May
-            10 2022 12-1pm PDT</strong> NMFS R UG Lightning Talks! <a
-            href="https://libguides.library.noaa.gov/seminars/upcoming/NMFS-R-UG-Creating-reproducible-and-robust-fisheries-science-workflows-using-R-and">Central
-            Library blog post</a> • <a
-            href="https://www.youtube.com/watch?v=4Lo3peWvHbE&amp;authuser=0">Video</a>
-            • <a
-            href="https://docs.google.com/presentation/d/1HpmcCxFX_gj_L02jBfsOjVLWg8btA6Ym791XlxQjcFk/edit#slide=id.gf731ae63a1_0_5">Slides
-            - NOAA access</a> * <strong>Tues April 12 2022 12-1pm
-            PST</strong> {pins} with an R Studio Rep! A representative
-            from R Studio will be joining us to introduce the {pins} R
-            package. {pins} can be used to share on a networked drive or
-            with services like DropBox, RStudio Connect, Amazon S3,
-            Azure storage and Microsoft 365 (OneDrive and SharePoint). *
-            <strong>Tues Mar 29 2022 12-1pm PST. NMFS R UG Monthly
-            Meeting</strong> Erin Steiner (NWFSC) runs a data collection
-            program where she collects cost and participation info from
-            Commercial fishers, processors, and quota owners. She will
-            present two types of markdown tools they have developed to
-            QA their data and communicate with participants. Finally,
-            she’ll present some data flow challenges the team has
-            encountered and hopefully facilitate a discussion of how
-            others have resolved those issues. * Recordings of the PSAW
-            III Training Sessions are online! <a
-            href="https://sites.google.com/noaa.gov/nmfs-ost-psaw">Recordings
-            of the sessions - NOAA Access only</a> * Tues Mar 8 2022
-            12-1pm PST. NMFS R UG Monthly Meeting Adyan Rios (SEFSC)
-            will talk about how the SouthEast Data, Assessment, and
-            Review (SEDAR) is dealing with confidential data used in
-            projects on GitHub. She’ll talk about various tools and
-            processes to prevent confidential data or secrets from being
-            committed to repos <a
-            href="https://drive.google.com/file/d/183igNEgj1qa8ea3GprBZzlfYn8z1eXPW/view?usp=sharing">Recording
-            of the session - NOAA access only</a> * Wed Feb 23 2022
-            1-5pm Eastern. PSAW III Introduction to Mapping and Spatial
-            Analysis in R (Kevin Stierhoff, SWFSC) * Wed Mar 2 and 9
-            2022 1-4pm EDT. PSAW III Fitting Spatial and Spatiotemporal
-            Models with sdmTMB (Eric Ward, NWFSC; Lewis Barnett) * Wed
-            Feb 9 2022 1-4pm EDT. PSAW III Training Sessions. Part 2.
-            Introduction to FOSSA: Free &amp; Open Source Software for
-            Acoustics (R packages) (Shannon Rankin, SWFSC) * Wed Feb 16
-            2022 1-3pm EDT. PSAW III Training Sessions. Creating a Data
-            R Package (Eli Holmes, NWFSC) <a
-            href="https://rverse-tutorials.github.io/PSAW-2022/">Workshop
-            notes and video</a> * Tues Feb 15 10am HI/12pm PT/3pm ET:
-            RStudio Connect Load Testing Christine Stawitz (OST) - We
-            want to test the ability of the RStudio Connect instance to
-            scale to multiple users. As such, we wanted to set up a time
-            for us to try to use a bunch of the Shiny apps on there
-            simultaneously. Join to learn more about the NMFS R Shiny
-            Connect instance and see if we can break it! * Tues Feb 1
-            2022 12-1pm PST. NMFS R UG Monthly Meeting. Abby Tyrell
-            (NEFSC) gave a presentation on workflow for the Ecosystem
-            and Socioeconomic Profiles. <a
-            href="https://docs.google.com/presentation/d/14CnVSQOp2q171obKH1gHHb1bBBblGWLsuMEkPXbFCxU/edit?usp=sharing">Slides
-            NOAA access</a> [AKesp report repo]
-            (https://github.com/atyrell3/AKesp) <a
-            href="https://drive.google.com/file/d/1JDJolN2wPOQR55vE4eBiDCEAnJNTEZp9/view?usp=sharing">Recording
-            of the session - NOAA access only</a> * Tues Jan 4 2022 9am
-            PST. NMFS R UG Monthly Meeting. Josh London (AFSC) will give
-            a presentation on the {targets} package. <a
-            href="https://github.com/nmfs-opensci/NMFS-R-UG-Meetings/tree/main/2022-01-04-targets-package">Meeting
-            notes</a> <a
-            href="https://drive.google.com/file/d/1D8CPg3GDqJt1jwAMn4FoVDThTViHvusr/view?usp=sharing">Recording
-            of the session - NOAA access only</a> * Tue Dec 14th 9am
-            PST. NMFS R UG Special Session Kelly Mayo (NMFS Office of
-            Science and Technology) will be giving a 1 hour tutorial and
-            discussion about manually (via Adobe Acrobat) editing
-            reports to be 508 compliant and talk about how we can use
-            screen readers to check our work. <a
-            href="https://github.com/nmfs-opensci/NMFS-R-UG-Meetings/blob/main/2021-12-14-508-Compliance/Readme.md">Meeting
-            notes</a> <a
-            href="https://drive.google.com/file/d/1GeHoX9Fq5GWkZmI8Ru7JTDv0V-7M3rE6/view?usp=sharing">Recording
-            of the session - NOAA access only</a> * Tue Dec 7th 9am PST.
-            NMFS R UG Monthly Meeting. GitHub Actions. Eli Holmes
-            (NWFSC) will give a brief tutorial and then NMFS R UG
-            members will show how they are using GitHub Actions. <a
-            href="https://github.com/nmfs-opensci/12-07-21-GitHub-Actions">GitHub
-            Actions repo</a> <a
-            href="https://drive.google.com/file/d/1_oxKuRC-m4kzy57y3PJRfhnYIXXm5nkE/view?usp=sharing">Recording
-            of the session - NOAA access only</a> * Nov 16th 9am PST.
-            NMFS R UG Monthly Meeting. Lightning Talks on Reproducible
-            Reports and Scientific Manuscripts. <a
-            href="https://github.com/nmfs-opensci/11-16-21-Lightning-Talks">List
-            of talks with links to slides</a> * NMFS R User Group. Oct
-            26, 2021 9am PST. NMFS R UG Monthly Meeting. <a
-            href="https://github.com/nmfs-opensci/10-26-21-508-Compliance/blob/main/README.md">508
-            Compliance and R Markdown documents repo</a>. <a
-            href="https://drive.google.com/file/d/1-KQd2sur0l1UxWtvl03smYR9WexdzVXZ/view?usp=sharing">Recording
-            of the session - NOAA access only</a> * Oct 12th 9am PST.
-            Inaugural NMRS R UG meeting. Virtual.</p>
+            <p>See the “Search past events” tab and our <a href="https://docs.google.com/document/d/1mrgtrSXVtPCTxrpBa_0ZbxEsnK9vcQzs6RIV3f-OTPw/edit?usp=sharing">Past meeting notes</a> for info on past events and links to things like notes and video for past events.</p>
+            <p><br/> * <strong>Fri July 15 2022 10-11am PDT. Week 6 of <a href="https://rverse-tutorials.github.io/RWorkflow-NWFSC-2022/">Practical R and Git Workflow for NOAA Scientists</a></strong> Eli Holmes (NWFSC) Week 5 Documenting and sharing R packages with RStudio and GitHub. Link to video is on the website. * <strong>Fri July 8 2022 10-11am PDT. Week 5 of <a href="https://rverse-tutorials.github.io/RWorkflow-NWFSC-2022/">Practical R and Git Workflow for NOAA Scientists</a></strong> Eli Holmes (NWFSC) Week 5 Intro to making R packages in RStudio. Link to video is on the website. * <strong>Fri June 10 2022 10-11am PDT. Week 4 of <a href="https://rverse-tutorials.github.io/RWorkflow-NWFSC-2022/">Practical R and Git Workflow for NOAA Scientists</a></strong> Eli Holmes (NWFSC) Week 4 Intro to Scrum using GitHub issues and project boards. This week will focus on the most popular Agile methodology: Scrum. Scrum is a lightweight and flexible framework that helps teams to work together better and learn with each cycle of work. It has 3 roles, 5 events (steps) that the team goes through during a time-boxed period of work. I will show you how to set up and run a Scrum Sprint using a GitHub project board. The real power of Scrum comes with teams by promoting high functioning teamwork, but you can use Scrum solo; you’ll just have to ‘switch hats’ when you take on different roles. Link to video is on the website. * <strong>Fridays starting May 20 2022 10-11am PDT</strong> <a href="https://rverse-tutorials.github.io/RWorkflow-NWFSC-2022/">Practical R and Git Workflow for NOAA Scientists</a>. All sessions are recorded and links are on the website. * <a href="https://tinyurl.com/nmfs-rug-win-calendar">Win-Spr 2022 NMFS R UG Monthly Events Flyer</a> * <strong>Tues May 10 2022 12-1pm PDT</strong> NMFS R UG Lightning Talks! <a href="https://libguides.library.noaa.gov/seminars/upcoming/NMFS-R-UG-Creating-reproducible-and-robust-fisheries-science-workflows-using-R-and">Central Library blog post</a> • <a href="https://www.youtube.com/watch?v=4Lo3peWvHbE&amp;authuser=0">Video</a> • <a href="https://docs.google.com/presentation/d/1HpmcCxFX_gj_L02jBfsOjVLWg8btA6Ym791XlxQjcFk/edit#slide=id.gf731ae63a1_0_5">Slides - NOAA access</a> * <strong>Tues April 12 2022 12-1pm PST</strong> {pins} with an R Studio Rep! A representative from R Studio will be joining us to introduce the {pins} R package. {pins} can be used to share on a networked drive or with services like DropBox, RStudio Connect, Amazon S3, Azure storage and Microsoft 365 (OneDrive and SharePoint). * <strong>Tues Mar 29 2022 12-1pm PST. NMFS R UG Monthly Meeting</strong> Erin Steiner (NWFSC) runs a data collection program where she collects cost and participation info from Commercial fishers, processors, and quota owners. She will present two types of markdown tools they have developed to QA their data and communicate with participants. Finally, she’ll present some data flow challenges the team has encountered and hopefully facilitate a discussion of how others have resolved those issues. * Recordings of the PSAW III Training Sessions are online! <a href="https://sites.google.com/noaa.gov/nmfs-ost-psaw">Recordings of the sessions - NOAA Access only</a> * Tues Mar 8 2022 12-1pm PST. NMFS R UG Monthly Meeting Adyan Rios (SEFSC) will talk about how the SouthEast Data, Assessment, and Review (SEDAR) is dealing with confidential data used in projects on GitHub. She’ll talk about various tools and processes to prevent confidential data or secrets from being committed to repos <a href="https://drive.google.com/file/d/183igNEgj1qa8ea3GprBZzlfYn8z1eXPW/view?usp=sharing">Recording of the session - NOAA access only</a> * Wed Feb 23 2022 1-5pm Eastern. PSAW III Introduction to Mapping and Spatial Analysis in R (Kevin Stierhoff, SWFSC) * Wed Mar 2 and 9 2022 1-4pm EDT. PSAW III Fitting Spatial and Spatiotemporal Models with sdmTMB (Eric Ward, NWFSC; Lewis Barnett) * Wed Feb 9 2022 1-4pm EDT. PSAW III Training Sessions. Part 2. Introduction to FOSSA: Free &amp; Open Source Software for Acoustics (R packages) (Shannon Rankin, SWFSC) * Wed Feb 16 2022 1-3pm EDT. PSAW III Training Sessions. Creating a Data R Package (Eli Holmes, NWFSC) <a href="https://rverse-tutorials.github.io/PSAW-2022/">Workshop notes and video</a> * Tues Feb 15 10am HI/12pm PT/3pm ET: RStudio Connect Load Testing Christine Stawitz (OST) - We want to test the ability of the RStudio Connect instance to scale to multiple users. As such, we wanted to set up a time for us to try to use a bunch of the Shiny apps on there simultaneously. Join to learn more about the NMFS R Shiny Connect instance and see if we can break it! * Tues Feb 1 2022 12-1pm PST. NMFS R UG Monthly Meeting. Abby Tyrell (NEFSC) gave a presentation on workflow for the Ecosystem and Socioeconomic Profiles. <a href="https://docs.google.com/presentation/d/14CnVSQOp2q171obKH1gHHb1bBBblGWLsuMEkPXbFCxU/edit?usp=sharing">Slides NOAA access</a> [AKesp report repo] (https://github.com/atyrell3/AKesp) <a href="https://drive.google.com/file/d/1JDJolN2wPOQR55vE4eBiDCEAnJNTEZp9/view?usp=sharing">Recording of the session - NOAA access only</a> * Tues Jan 4 2022 9am PST. NMFS R UG Monthly Meeting. Josh London (AFSC) will give a presentation on the {targets} package. <a href="https://github.com/nmfs-opensci/NMFS-R-UG-Meetings/tree/main/2022-01-04-targets-package">Meeting notes</a> <a href="https://drive.google.com/file/d/1D8CPg3GDqJt1jwAMn4FoVDThTViHvusr/view?usp=sharing">Recording of the session - NOAA access only</a> * Tue Dec 14th 9am PST. NMFS R UG Special Session Kelly Mayo (NMFS Office of Science and Technology) will be giving a 1 hour tutorial and discussion about manually (via Adobe Acrobat) editing reports to be 508 compliant and talk about how we can use screen readers to check our work. <a href="https://github.com/nmfs-opensci/NMFS-R-UG-Meetings/blob/main/2021-12-14-508-Compliance/Readme.md">Meeting notes</a> <a href="https://drive.google.com/file/d/1GeHoX9Fq5GWkZmI8Ru7JTDv0V-7M3rE6/view?usp=sharing">Recording of the session - NOAA access only</a> * Tue Dec 7th 9am PST. NMFS R UG Monthly Meeting. GitHub Actions. Eli Holmes (NWFSC) will give a brief tutorial and then NMFS R UG members will show how they are using GitHub Actions. <a href="https://github.com/nmfs-opensci/12-07-21-GitHub-Actions">GitHub Actions repo</a> <a href="https://drive.google.com/file/d/1_oxKuRC-m4kzy57y3PJRfhnYIXXm5nkE/view?usp=sharing">Recording of the session - NOAA access only</a> * Nov 16th 9am PST. NMFS R UG Monthly Meeting. Lightning Talks on Reproducible Reports and Scientific Manuscripts. <a href="https://github.com/nmfs-opensci/11-16-21-Lightning-Talks">List of talks with links to slides</a> * NMFS R User Group. Oct 26, 2021 9am PST. NMFS R UG Monthly Meeting. <a href="https://github.com/nmfs-opensci/10-26-21-508-Compliance/blob/main/README.md">508 Compliance and R Markdown documents repo</a>. <a href="https://drive.google.com/file/d/1-KQd2sur0l1UxWtvl03smYR9WexdzVXZ/view?usp=sharing">Recording of the session - NOAA access only</a> * Oct 12th 9am PST. Inaugural NMRS R UG meeting. Virtual.</p>
             </div>
             <p><br/><br/></p>
             </div>
             <div id="other-calendars" class="section level2">
             <h2>Other Calendars</h2>
             <ul>
-            <li><a
-            href="https://calendar.google.com/calendar/embed?src=noaa.gov_60rfn7ml9rpchl63vs4af9n018%40group.calendar.google.com&amp;ctz=America%2FLos_Angeles">NMFS
-            R UG calendar - NOAA access only</a></li>
-            <li><a
-            href="https://noaa-fisheries-integrated-toolbox.github.io/news/">FIT
-            announcements</a></li>
-            <li><a
-            href="https://noaa-fisheries-integrated-toolbox.github.io/news/calendar/">FIT
-            calendar</a></li>
-            <li><a
-            href="https://nasa-openscapes.github.io/events.html">NASA
-            Openscapes Events</a> Though NASA, sometimes there are
-            public events of interest listed here.</li>
+            <li><a href="https://calendar.google.com/calendar/embed?src=noaa.gov_60rfn7ml9rpchl63vs4af9n018%40group.calendar.google.com&amp;ctz=America%2FLos_Angeles">NMFS R UG calendar - NOAA access only</a></li>
+            <li><a href="https://noaa-fisheries-integrated-toolbox.github.io/news/">FIT announcements</a></li>
+            <li><a href="https://noaa-fisheries-integrated-toolbox.github.io/news/calendar/">FIT calendar</a></li>
+            <li><a href="https://nasa-openscapes.github.io/events.html">NASA Openscapes Events</a> Though NASA, sometimes there are public events of interest listed here.</li>
             </ul>
             </div>
           </div>
@@ -1128,44 +972,18 @@
               </style>
               <div>
               <div style="margin-right:auto; margin-left:auto;">
-              <a href="https://forms.gle/Xf8hr48SuyP1cNkn8">Join our
-              Google Space! (NOAA only)</a> — <a
-              href="https://calendar.google.com/calendar/embed?src=noaa.gov_60rfn7ml9rpchl63vs4af9n018%40group.calendar.google.com&amp;ctz=America%2FLos_Angeles">Calendar
-              (NOAA only)</a> — <a
-              href="https://forms.gle/GQVNLnTQ7SHCNiFZA">Contact
-              NMFS-RUG (NOAA only)</a>
+              <a href="https://forms.gle/Xf8hr48SuyP1cNkn8">Join our Google Space! (NOAA only)</a> — <a href="https://calendar.google.com/calendar/embed?src=noaa.gov_60rfn7ml9rpchl63vs4af9n018%40group.calendar.google.com&amp;ctz=America%2FLos_Angeles">Calendar (NOAA only)</a> — <a href="https://forms.gle/GQVNLnTQ7SHCNiFZA">Contact NMFS-RUG (NOAA only)</a>
               </div>
               </div>
               <p>
               </p>
               <br/>
               <hr>
-              <div id="upcoming-nmfs-r-ug-events"
-              class="section level2">
+              <div id="upcoming-nmfs-r-ug-events" class="section level2">
               <h2>Upcoming NMFS R UG Events</h2>
               <ul>
-              <li><p><strong>Tues July 19 2022 12-1pm PDT. NMFS R UG
-              Monthly Meeting</strong> Christine Stawitz (NWFSC) will
-              share how she is using the GitHub API to create status
-              emails in R. After the demo, we’ll discuss how we can use
-              Christine’s efforts to possibly create a user-friendly R
-              package that everyone can benefit from! <a
-              href="https://calendar.google.com/event?action=TEMPLATE&amp;tmeid=N25mNjYzdmFxaGg3OTcxdDJucjdiYzYzNmsgZWxpLmhvbG1lc0Bub2FhLmdvdg&amp;tmsrc=eli.holmes%40noaa.gov">Add
-              to your calendar</a></p></li>
-              <li><p><strong>Fri July 15 2022 10-11am PDT. Week 6 of <a
-              href="https://rverse-tutorials.github.io/RWorkflow-NWFSC-2022/">Practical
-              R and Git Workflow for NOAA Scientists</a></strong> Eli
-              Holmes (NWFSC) Week 6 R Markdown for writing reports.
-              There are many online tutorials for R Markdown which will
-              cover the basics. I will focus on R Markdown for fisheries
-              (or other) reports. When the data change (which happens
-              often), we have to remake tables (and graphs) and update
-              the numbers in text. For big reports, this is
-              time-consuming and creates errors. I’ll show you how to
-              use R Markdown to automate this process, so you are not
-              manually remaking reports. <a
-              href="https://noaanmfs-meets.webex.com/noaanmfs-meets/j.php?MTID=m78f662eb57d19d05c40c45a722d81d5e">Join
-              with WebEx</a></p></li>
+              <li><p><strong>Tues July 19 2022 12-1pm PDT. NMFS R UG Monthly Meeting</strong> Christine Stawitz (NWFSC) will share how she is using the GitHub API to create status emails in R. After the demo, we’ll discuss how we can use Christine’s efforts to possibly create a user-friendly R package that everyone can benefit from! <a href="https://calendar.google.com/event?action=TEMPLATE&amp;tmeid=N25mNjYzdmFxaGg3OTcxdDJucjdiYzYzNmsgZWxpLmhvbG1lc0Bub2FhLmdvdg&amp;tmsrc=eli.holmes%40noaa.gov">Add to your calendar</a></p></li>
+              <li><p><strong>Fri July 15 2022 10-11am PDT. Week 6 of <a href="https://rverse-tutorials.github.io/RWorkflow-NWFSC-2022/">Practical R and Git Workflow for NOAA Scientists</a></strong> Eli Holmes (NWFSC) Week 6 R Markdown for writing reports. There are many online tutorials for R Markdown which will cover the basics. I will focus on R Markdown for fisheries (or other) reports. When the data change (which happens often), we have to remake tables (and graphs) and update the numbers in text. For big reports, this is time-consuming and creates errors. I’ll show you how to use R Markdown to automate this process, so you are not manually remaking reports. <a href="https://noaanmfs-meets.webex.com/noaanmfs-meets/j.php?MTID=m78f662eb57d19d05c40c45a722d81d5e">Join with WebEx</a></p></li>
               </ul>
               <center>
               <button id="button" class="button">
@@ -1173,152 +991,18 @@
               </button>
               </center>
               <div id="wrapper" class="open">
-              <p>See the “Search past events” tab and our <a
-              href="https://docs.google.com/document/d/1mrgtrSXVtPCTxrpBa_0ZbxEsnK9vcQzs6RIV3f-OTPw/edit?usp=sharing">Past
-              meeting notes</a> for info on past events and links to
-              things like notes and video for past events.</p>
-              <p><br/> * <strong>Fri July 15 2022 10-11am PDT. Week 6 of
-              <a
-              href="https://rverse-tutorials.github.io/RWorkflow-NWFSC-2022/">Practical
-              R and Git Workflow for NOAA Scientists</a></strong> Eli
-              Holmes (NWFSC) Week 5 Documenting and sharing R packages
-              with RStudio and GitHub. Link to video is on the website.
-              * <strong>Fri July 8 2022 10-11am PDT. Week 5 of <a
-              href="https://rverse-tutorials.github.io/RWorkflow-NWFSC-2022/">Practical
-              R and Git Workflow for NOAA Scientists</a></strong> Eli
-              Holmes (NWFSC) Week 5 Intro to making R packages in
-              RStudio. Link to video is on the website. * <strong>Fri
-              June 10 2022 10-11am PDT. Week 4 of <a
-              href="https://rverse-tutorials.github.io/RWorkflow-NWFSC-2022/">Practical
-              R and Git Workflow for NOAA Scientists</a></strong> Eli
-              Holmes (NWFSC) Week 4 Intro to Scrum using GitHub issues
-              and project boards. This week will focus on the most
-              popular Agile methodology: Scrum. Scrum is a lightweight
-              and flexible framework that helps teams to work together
-              better and learn with each cycle of work. It has 3 roles,
-              5 events (steps) that the team goes through during a
-              time-boxed period of work. I will show you how to set up
-              and run a Scrum Sprint using a GitHub project board. The
-              real power of Scrum comes with teams by promoting high
-              functioning teamwork, but you can use Scrum solo; you’ll
-              just have to ‘switch hats’ when you take on different
-              roles. Link to video is on the website. * <strong>Fridays
-              starting May 20 2022 10-11am PDT</strong> <a
-              href="https://rverse-tutorials.github.io/RWorkflow-NWFSC-2022/">Practical
-              R and Git Workflow for NOAA Scientists</a>. All sessions
-              are recorded and links are on the website. * <a
-              href="https://tinyurl.com/nmfs-rug-win-calendar">Win-Spr
-              2022 NMFS R UG Monthly Events Flyer</a> * <strong>Tues May
-              10 2022 12-1pm PDT</strong> NMFS R UG Lightning Talks! <a
-              href="https://libguides.library.noaa.gov/seminars/upcoming/NMFS-R-UG-Creating-reproducible-and-robust-fisheries-science-workflows-using-R-and">Central
-              Library blog post</a> • <a
-              href="https://www.youtube.com/watch?v=4Lo3peWvHbE&amp;authuser=0">Video</a>
-              • <a
-              href="https://docs.google.com/presentation/d/1HpmcCxFX_gj_L02jBfsOjVLWg8btA6Ym791XlxQjcFk/edit#slide=id.gf731ae63a1_0_5">Slides
-              - NOAA access</a> * <strong>Tues April 12 2022 12-1pm
-              PST</strong> {pins} with an R Studio Rep! A representative
-              from R Studio will be joining us to introduce the {pins} R
-              package. {pins} can be used to share on a networked drive
-              or with services like DropBox, RStudio Connect, Amazon S3,
-              Azure storage and Microsoft 365 (OneDrive and SharePoint).
-              * <strong>Tues Mar 29 2022 12-1pm PST. NMFS R UG Monthly
-              Meeting</strong> Erin Steiner (NWFSC) runs a data
-              collection program where she collects cost and
-              participation info from Commercial fishers, processors,
-              and quota owners. She will present two types of markdown
-              tools they have developed to QA their data and communicate
-              with participants. Finally, she’ll present some data flow
-              challenges the team has encountered and hopefully
-              facilitate a discussion of how others have resolved those
-              issues. * Recordings of the PSAW III Training Sessions are
-              online! <a
-              href="https://sites.google.com/noaa.gov/nmfs-ost-psaw">Recordings
-              of the sessions - NOAA Access only</a> * Tues Mar 8 2022
-              12-1pm PST. NMFS R UG Monthly Meeting Adyan Rios (SEFSC)
-              will talk about how the SouthEast Data, Assessment, and
-              Review (SEDAR) is dealing with confidential data used in
-              projects on GitHub. She’ll talk about various tools and
-              processes to prevent confidential data or secrets from
-              being committed to repos <a
-              href="https://drive.google.com/file/d/183igNEgj1qa8ea3GprBZzlfYn8z1eXPW/view?usp=sharing">Recording
-              of the session - NOAA access only</a> * Wed Feb 23 2022
-              1-5pm Eastern. PSAW III Introduction to Mapping and
-              Spatial Analysis in R (Kevin Stierhoff, SWFSC) * Wed Mar 2
-              and 9 2022 1-4pm EDT. PSAW III Fitting Spatial and
-              Spatiotemporal Models with sdmTMB (Eric Ward, NWFSC; Lewis
-              Barnett) * Wed Feb 9 2022 1-4pm EDT. PSAW III Training
-              Sessions. Part 2. Introduction to FOSSA: Free &amp; Open
-              Source Software for Acoustics (R packages) (Shannon
-              Rankin, SWFSC) * Wed Feb 16 2022 1-3pm EDT. PSAW III
-              Training Sessions. Creating a Data R Package (Eli Holmes,
-              NWFSC) <a
-              href="https://rverse-tutorials.github.io/PSAW-2022/">Workshop
-              notes and video</a> * Tues Feb 15 10am HI/12pm PT/3pm ET:
-              RStudio Connect Load Testing Christine Stawitz (OST) - We
-              want to test the ability of the RStudio Connect instance
-              to scale to multiple users. As such, we wanted to set up a
-              time for us to try to use a bunch of the Shiny apps on
-              there simultaneously. Join to learn more about the NMFS R
-              Shiny Connect instance and see if we can break it! * Tues
-              Feb 1 2022 12-1pm PST. NMFS R UG Monthly Meeting. Abby
-              Tyrell (NEFSC) gave a presentation on workflow for the
-              Ecosystem and Socioeconomic Profiles. <a
-              href="https://docs.google.com/presentation/d/14CnVSQOp2q171obKH1gHHb1bBBblGWLsuMEkPXbFCxU/edit?usp=sharing">Slides
-              NOAA access</a> [AKesp report repo]
-              (https://github.com/atyrell3/AKesp) <a
-              href="https://drive.google.com/file/d/1JDJolN2wPOQR55vE4eBiDCEAnJNTEZp9/view?usp=sharing">Recording
-              of the session - NOAA access only</a> * Tues Jan 4 2022
-              9am PST. NMFS R UG Monthly Meeting. Josh London (AFSC)
-              will give a presentation on the {targets} package. <a
-              href="https://github.com/nmfs-opensci/NMFS-R-UG-Meetings/tree/main/2022-01-04-targets-package">Meeting
-              notes</a> <a
-              href="https://drive.google.com/file/d/1D8CPg3GDqJt1jwAMn4FoVDThTViHvusr/view?usp=sharing">Recording
-              of the session - NOAA access only</a> * Tue Dec 14th 9am
-              PST. NMFS R UG Special Session Kelly Mayo (NMFS Office of
-              Science and Technology) will be giving a 1 hour tutorial
-              and discussion about manually (via Adobe Acrobat) editing
-              reports to be 508 compliant and talk about how we can use
-              screen readers to check our work. <a
-              href="https://github.com/nmfs-opensci/NMFS-R-UG-Meetings/blob/main/2021-12-14-508-Compliance/Readme.md">Meeting
-              notes</a> <a
-              href="https://drive.google.com/file/d/1GeHoX9Fq5GWkZmI8Ru7JTDv0V-7M3rE6/view?usp=sharing">Recording
-              of the session - NOAA access only</a> * Tue Dec 7th 9am
-              PST. NMFS R UG Monthly Meeting. GitHub Actions. Eli Holmes
-              (NWFSC) will give a brief tutorial and then NMFS R UG
-              members will show how they are using GitHub Actions. <a
-              href="https://github.com/nmfs-opensci/12-07-21-GitHub-Actions">GitHub
-              Actions repo</a> <a
-              href="https://drive.google.com/file/d/1_oxKuRC-m4kzy57y3PJRfhnYIXXm5nkE/view?usp=sharing">Recording
-              of the session - NOAA access only</a> * Nov 16th 9am PST.
-              NMFS R UG Monthly Meeting. Lightning Talks on Reproducible
-              Reports and Scientific Manuscripts. <a
-              href="https://github.com/nmfs-opensci/11-16-21-Lightning-Talks">List
-              of talks with links to slides</a> * NMFS R User Group. Oct
-              26, 2021 9am PST. NMFS R UG Monthly Meeting. <a
-              href="https://github.com/nmfs-opensci/10-26-21-508-Compliance/blob/main/README.md">508
-              Compliance and R Markdown documents repo</a>. <a
-              href="https://drive.google.com/file/d/1-KQd2sur0l1UxWtvl03smYR9WexdzVXZ/view?usp=sharing">Recording
-              of the session - NOAA access only</a> * Oct 12th 9am PST.
-              Inaugural NMRS R UG meeting. Virtual.</p>
+              <p>See the “Search past events” tab and our <a href="https://docs.google.com/document/d/1mrgtrSXVtPCTxrpBa_0ZbxEsnK9vcQzs6RIV3f-OTPw/edit?usp=sharing">Past meeting notes</a> for info on past events and links to things like notes and video for past events.</p>
+              <p><br/> * <strong>Fri July 15 2022 10-11am PDT. Week 6 of <a href="https://rverse-tutorials.github.io/RWorkflow-NWFSC-2022/">Practical R and Git Workflow for NOAA Scientists</a></strong> Eli Holmes (NWFSC) Week 5 Documenting and sharing R packages with RStudio and GitHub. Link to video is on the website. * <strong>Fri July 8 2022 10-11am PDT. Week 5 of <a href="https://rverse-tutorials.github.io/RWorkflow-NWFSC-2022/">Practical R and Git Workflow for NOAA Scientists</a></strong> Eli Holmes (NWFSC) Week 5 Intro to making R packages in RStudio. Link to video is on the website. * <strong>Fri June 10 2022 10-11am PDT. Week 4 of <a href="https://rverse-tutorials.github.io/RWorkflow-NWFSC-2022/">Practical R and Git Workflow for NOAA Scientists</a></strong> Eli Holmes (NWFSC) Week 4 Intro to Scrum using GitHub issues and project boards. This week will focus on the most popular Agile methodology: Scrum. Scrum is a lightweight and flexible framework that helps teams to work together better and learn with each cycle of work. It has 3 roles, 5 events (steps) that the team goes through during a time-boxed period of work. I will show you how to set up and run a Scrum Sprint using a GitHub project board. The real power of Scrum comes with teams by promoting high functioning teamwork, but you can use Scrum solo; you’ll just have to ‘switch hats’ when you take on different roles. Link to video is on the website. * <strong>Fridays starting May 20 2022 10-11am PDT</strong> <a href="https://rverse-tutorials.github.io/RWorkflow-NWFSC-2022/">Practical R and Git Workflow for NOAA Scientists</a>. All sessions are recorded and links are on the website. * <a href="https://tinyurl.com/nmfs-rug-win-calendar">Win-Spr 2022 NMFS R UG Monthly Events Flyer</a> * <strong>Tues May 10 2022 12-1pm PDT</strong> NMFS R UG Lightning Talks! <a href="https://libguides.library.noaa.gov/seminars/upcoming/NMFS-R-UG-Creating-reproducible-and-robust-fisheries-science-workflows-using-R-and">Central Library blog post</a> • <a href="https://www.youtube.com/watch?v=4Lo3peWvHbE&amp;authuser=0">Video</a> • <a href="https://docs.google.com/presentation/d/1HpmcCxFX_gj_L02jBfsOjVLWg8btA6Ym791XlxQjcFk/edit#slide=id.gf731ae63a1_0_5">Slides - NOAA access</a> * <strong>Tues April 12 2022 12-1pm PST</strong> {pins} with an R Studio Rep! A representative from R Studio will be joining us to introduce the {pins} R package. {pins} can be used to share on a networked drive or with services like DropBox, RStudio Connect, Amazon S3, Azure storage and Microsoft 365 (OneDrive and SharePoint). * <strong>Tues Mar 29 2022 12-1pm PST. NMFS R UG Monthly Meeting</strong> Erin Steiner (NWFSC) runs a data collection program where she collects cost and participation info from Commercial fishers, processors, and quota owners. She will present two types of markdown tools they have developed to QA their data and communicate with participants. Finally, she’ll present some data flow challenges the team has encountered and hopefully facilitate a discussion of how others have resolved those issues. * Recordings of the PSAW III Training Sessions are online! <a href="https://sites.google.com/noaa.gov/nmfs-ost-psaw">Recordings of the sessions - NOAA Access only</a> * Tues Mar 8 2022 12-1pm PST. NMFS R UG Monthly Meeting Adyan Rios (SEFSC) will talk about how the SouthEast Data, Assessment, and Review (SEDAR) is dealing with confidential data used in projects on GitHub. She’ll talk about various tools and processes to prevent confidential data or secrets from being committed to repos <a href="https://drive.google.com/file/d/183igNEgj1qa8ea3GprBZzlfYn8z1eXPW/view?usp=sharing">Recording of the session - NOAA access only</a> * Wed Feb 23 2022 1-5pm Eastern. PSAW III Introduction to Mapping and Spatial Analysis in R (Kevin Stierhoff, SWFSC) * Wed Mar 2 and 9 2022 1-4pm EDT. PSAW III Fitting Spatial and Spatiotemporal Models with sdmTMB (Eric Ward, NWFSC; Lewis Barnett) * Wed Feb 9 2022 1-4pm EDT. PSAW III Training Sessions. Part 2. Introduction to FOSSA: Free &amp; Open Source Software for Acoustics (R packages) (Shannon Rankin, SWFSC) * Wed Feb 16 2022 1-3pm EDT. PSAW III Training Sessions. Creating a Data R Package (Eli Holmes, NWFSC) <a href="https://rverse-tutorials.github.io/PSAW-2022/">Workshop notes and video</a> * Tues Feb 15 10am HI/12pm PT/3pm ET: RStudio Connect Load Testing Christine Stawitz (OST) - We want to test the ability of the RStudio Connect instance to scale to multiple users. As such, we wanted to set up a time for us to try to use a bunch of the Shiny apps on there simultaneously. Join to learn more about the NMFS R Shiny Connect instance and see if we can break it! * Tues Feb 1 2022 12-1pm PST. NMFS R UG Monthly Meeting. Abby Tyrell (NEFSC) gave a presentation on workflow for the Ecosystem and Socioeconomic Profiles. <a href="https://docs.google.com/presentation/d/14CnVSQOp2q171obKH1gHHb1bBBblGWLsuMEkPXbFCxU/edit?usp=sharing">Slides NOAA access</a> [AKesp report repo] (https://github.com/atyrell3/AKesp) <a href="https://drive.google.com/file/d/1JDJolN2wPOQR55vE4eBiDCEAnJNTEZp9/view?usp=sharing">Recording of the session - NOAA access only</a> * Tues Jan 4 2022 9am PST. NMFS R UG Monthly Meeting. Josh London (AFSC) will give a presentation on the {targets} package. <a href="https://github.com/nmfs-opensci/NMFS-R-UG-Meetings/tree/main/2022-01-04-targets-package">Meeting notes</a> <a href="https://drive.google.com/file/d/1D8CPg3GDqJt1jwAMn4FoVDThTViHvusr/view?usp=sharing">Recording of the session - NOAA access only</a> * Tue Dec 14th 9am PST. NMFS R UG Special Session Kelly Mayo (NMFS Office of Science and Technology) will be giving a 1 hour tutorial and discussion about manually (via Adobe Acrobat) editing reports to be 508 compliant and talk about how we can use screen readers to check our work. <a href="https://github.com/nmfs-opensci/NMFS-R-UG-Meetings/blob/main/2021-12-14-508-Compliance/Readme.md">Meeting notes</a> <a href="https://drive.google.com/file/d/1GeHoX9Fq5GWkZmI8Ru7JTDv0V-7M3rE6/view?usp=sharing">Recording of the session - NOAA access only</a> * Tue Dec 7th 9am PST. NMFS R UG Monthly Meeting. GitHub Actions. Eli Holmes (NWFSC) will give a brief tutorial and then NMFS R UG members will show how they are using GitHub Actions. <a href="https://github.com/nmfs-opensci/12-07-21-GitHub-Actions">GitHub Actions repo</a> <a href="https://drive.google.com/file/d/1_oxKuRC-m4kzy57y3PJRfhnYIXXm5nkE/view?usp=sharing">Recording of the session - NOAA access only</a> * Nov 16th 9am PST. NMFS R UG Monthly Meeting. Lightning Talks on Reproducible Reports and Scientific Manuscripts. <a href="https://github.com/nmfs-opensci/11-16-21-Lightning-Talks">List of talks with links to slides</a> * NMFS R User Group. Oct 26, 2021 9am PST. NMFS R UG Monthly Meeting. <a href="https://github.com/nmfs-opensci/10-26-21-508-Compliance/blob/main/README.md">508 Compliance and R Markdown documents repo</a>. <a href="https://drive.google.com/file/d/1-KQd2sur0l1UxWtvl03smYR9WexdzVXZ/view?usp=sharing">Recording of the session - NOAA access only</a> * Oct 12th 9am PST. Inaugural NMRS R UG meeting. Virtual.</p>
               </div>
               <p><br/><br/></p>
               </div>
               <div id="other-calendars" class="section level2">
               <h2>Other Calendars</h2>
               <ul>
-              <li><a
-              href="https://calendar.google.com/calendar/embed?src=noaa.gov_60rfn7ml9rpchl63vs4af9n018%40group.calendar.google.com&amp;ctz=America%2FLos_Angeles">NMFS
-              R UG calendar - NOAA access only</a></li>
-              <li><a
-              href="https://noaa-fisheries-integrated-toolbox.github.io/news/">FIT
-              announcements</a></li>
-              <li><a
-              href="https://noaa-fisheries-integrated-toolbox.github.io/news/calendar/">FIT
-              calendar</a></li>
-              <li><a
-              href="https://nasa-openscapes.github.io/events.html">NASA
-              Openscapes Events</a> Though NASA, sometimes there are
-              public events of interest listed here.</li>
+              <li><a href="https://calendar.google.com/calendar/embed?src=noaa.gov_60rfn7ml9rpchl63vs4af9n018%40group.calendar.google.com&amp;ctz=America%2FLos_Angeles">NMFS R UG calendar - NOAA access only</a></li>
+              <li><a href="https://noaa-fisheries-integrated-toolbox.github.io/news/">FIT announcements</a></li>
+              <li><a href="https://noaa-fisheries-integrated-toolbox.github.io/news/calendar/">FIT calendar</a></li>
+              <li><a href="https://nasa-openscapes.github.io/events.html">NASA Openscapes Events</a> Though NASA, sometimes there are public events of interest listed here.</li>
               </ul>
               </div>
             </div>
@@ -1333,15 +1017,12 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 
       <!--radix_placeholder_site_after_body-->
-      <!--/radix_placeholder_site_after_body-->
+    <!--/radix_placeholder_site_after_body-->
       <!--radix_placeholder_navigation_after_body-->
-      <div class="distill-site-nav distill-site-footer">
-      <p>This website was made with
-      <u><a href="https://rstudio.github.io/distill/">distill by
-      RStudio</a></u>.</p>
-      </div>
-      <!--/radix_placeholder_navigation_after_body-->
-
+    <div class="distill-site-nav distill-site-footer">
+    <p>This website was made with <u><a href="https://rstudio.github.io/distill/">distill by RStudio</a></u>.</p>
+    </div>
+    <!--/radix_placeholder_navigation_after_body-->
   
   </body>
 </html>
