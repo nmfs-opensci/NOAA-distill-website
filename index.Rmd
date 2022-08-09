@@ -88,7 +88,6 @@ See the "Search past events" tab and our [Past meeting notes](https://docs.googl
 * [NMFS R UG calendar - NOAA access only](https://calendar.google.com/calendar/embed?src=noaa.gov_60rfn7ml9rpchl63vs4af9n018%40group.calendar.google.com&ctz=America%2FLos_Angeles)
 * [FIT announcements](https://noaa-fisheries-integrated-toolbox.github.io/news/)
 * [FIT calendar](https://noaa-fisheries-integrated-toolbox.github.io/news/calendar/)
-* [NASA Openscapes Events](https://nasa-openscapes.github.io/events.html) Though NASA, sometimes there are public events of interest listed here.
 
 
 
