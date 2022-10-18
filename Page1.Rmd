@@ -1,0 +1,28 @@
+---
+title: "Simple Page"
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Basic
+
+This is a basic page with no table of contents. You specify this type of page with
+
+```
+output:
+  distill::distill_article:
+    self_contained: false
+```
+
+## R code
+
+Because this uses RMarkdown. You can have R code.
+
+```{r echo=FALSE}
+plot(1,1)
+```

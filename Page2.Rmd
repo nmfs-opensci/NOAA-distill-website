@@ -1,0 +1,39 @@
+---
+title: Page 2
+output:
+  distill::distill_article:
+    self_contained: false
+    toc: true
+    toc_depth: 3
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+```{css}
+d-title {
+    display: none;
+  }
+```
+
+# Header 1
+
+Here the title and description is removed by passing special css for this page to create a tighter layout.
+
+## Page with toc
+
+You can add a table of contents to your pages. This will be taken from your headers.
+
+### The yaml
+
+```
+output:
+  distill::distill_article:
+    self_contained: false
+    toc: true
+    toc_depth: 3
+```
+
+# Another top header
+

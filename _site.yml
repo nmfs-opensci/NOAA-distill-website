@@ -2,25 +2,23 @@ name: "."
 title: "NMFS R UG"
 description: |
   NMFS R User Group events and materials
-favicon: favicon.ico
+favicon: "favicon.ico"
 output_dir: "docs"
-base_url: https://nmfs-opensci.github.io/NMFS-R-UG
+base_url: https://nmfs-opensci.github.io/NOAA-distill-website
 navbar:
   logo: 
-    image: images/nmfs-r-ug-logo.png
+    image: images/nmfs-opensci-logo.png
   search: false
   right:
-    - text: "Upcoming events"
+    - text: "Home"
       href: index.html
-    - text: "Search past events"
-      href: Meetings.html
-    - text: "Workshops"
-      href: workshops.html
-    - text: "Resources"
-      href: resources.html      
+    - text: "Page 1"
+      href: Page1.html
+    - text: "Page 2"
+      href: Page2.html
     - icon: fab fa-github
-      href: https://github.com/nmfs-opensci/NMFS-R-UG
-theme: theme.css
+      href: https://github.com/nmfs-opensci/NOAA-distill-website
+theme: css/nmfs-palette-theme.css
 output:
   distill::distill_article:
     includes:
