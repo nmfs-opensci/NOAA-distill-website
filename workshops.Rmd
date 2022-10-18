@@ -15,6 +15,10 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ## 2022
 
+[GitHub team work and project boards](https://rverse-tutorials.github.io/WSDS-StLouis/)
+
+[RWorkflow Workshops 2022](https://rverse-tutorials.github.io/RWorkflow-NWFSC-2022/)
+
 [PSAW III Workshops](https://sites.google.com/noaa.gov/nmfs-ost-psaw) Workshops by NOAA Fisheries scientists on Git/GitHub, R packages, species distribution modeling, by-catch modeling, accessing remote-sensing data with R, open-source acoustics software
 
 ## 2021
