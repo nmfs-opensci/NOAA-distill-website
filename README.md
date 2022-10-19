@@ -30,6 +30,9 @@ You can build the site locally in RStudio, by going to the Build tab and clickin
 * Go to Settings > Actions > General and check that Actions are enabled.
 * Go to Settings > Actions > Pages and make sure it is set to publish from the main branch and docs folder.
 
+<img width="646" alt="image" src="https://user-images.githubusercontent.com/2545978/196588577-563c75f0-b6fd-4311-b499-78669233f7ec.png">
+
+
 
 
 
