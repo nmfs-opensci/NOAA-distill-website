@@ -4,7 +4,7 @@ This is a distill website using RMarkdown and the postcards package to create th
 
 The NMFS palette and fonts are being set in `css/nmfs-palette-theme.css`. You can try `css\theme.css` to see the distill default.
 
-### RStudio Set-up
+## RStudio Set-up
 
 * Install the needed packages. You only need to do this once.
 
