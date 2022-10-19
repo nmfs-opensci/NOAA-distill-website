@@ -25,6 +25,13 @@ You can build the site locally in RStudio, by going to the Build tab and clickin
 * Add pages like `Page1.Rmd` and then add those to `_site.yml`
 * Add your images (like logos) to `images` and a favicon to `favicon.ico`
 
+## GitHub set-up
+
+* Go to Settings > Actions > General and check that Actions are enabled.
+* Go to Settings > Actions > Pages and make sure it is set to publish from the main branch and docs folder.
+
+
+
 
 
 
